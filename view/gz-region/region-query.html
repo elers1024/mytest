@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>预约查询</title>
+    <link href="../../css/layout.css?v=upd201600405" rel="stylesheet" type="text/css"/>
+    <link href="../../css/style.css?v=upd20160427" rel="stylesheet" type="text/css"/>
+    <link href="../../css/imagemanage.css?v=upd20161010" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="../../images/favicon.ico">
+    <!-- respond.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+    <script src="../../js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+<style>
+    .pacs-consultation2 .user-select,.pacs-consultation3 .user-select{width: 97%;}
+</style>
+</head>
+<body class="pacs-image-con-body">
+<div class="header">
+    <div class="header-content">
+        <div class="head-left fl clearfixed">
+            <a href="#" class=""><img src="../../images/log.png" alt=""/></a>
+            <span></span>
+        </div>
+	        <ul class="head-center fl clearfixed">
+	           <li ><a href="region-apply.html">申请预约</a></li>
+			   <li><a href="region-execute.html">执行预约</a></li>
+	           <li class="current"><a href="region-query.html">预约查询</a></li>
+	        </ul>
+        <div class="head-right fl clearfixed">
+            <div class="user-head">
+                <img src="../../images/user.jpg" alt=""/>
+            </div>
+            <div class="user-info">
+                <p>
+                    欢迎您，<span>用户名</span>
+                    <a href="#" class="message"><i></i> <em>99+</em></a>
+                </p>
+
+                <p>
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">设置</a>
+                    <a href="javascript:;">帮助</a>
+                    <a href="javascript:;">退出</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="pacs-warp">
+    <h4>
+        <span class="width96"><a href="#">区域预约</a> ><a href='region-query.html'  >预约查询</a></span>
+    </h4>
+    <div id="image-con" class="report-list">
+        <div class="width96 pacs-content">
+            <div class="query-content pacs-consultation clearfixed">
+                
+                <div class="pacs-consultation2">
+                    <i></i> 
+                    <i></i>
+
+                    <div class="user-select pacs-select" style="margin-top: 18px;">
+                        <p>医疗机构：</p>
+
+                        <div class="grey-select" style="min-width: 80px; float: left; width: 75%;">
+                            <span class="user-select-span select-1-span">浙江大学附属第二医院</span>
+                            <i></i>
+                        </div>
+                        <ul class="user-select-ul select-1-ul" style="width: 75%;z-index: 100; ">
+                            <li><a title="浙江大学附属第二医院" href="javascript:;">浙江大学附属第二医院</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="浙江大学附属第二医院" href="javascript:;">浙江大学附属第二医院</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="浙江大学附属第二医院" href="javascript:;">浙江大学附属第二医院</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="pacs-consultation3 clearfixed">
+                    <div class="number fl">
+					<div class="user-select pacs-select" style="margin-top: 0px;">
+                        <p>执行医院：</p>
+
+                        <div class="grey-select" style="min-width: 80px; float: left; width: 75%;">
+                            <span class="user-select-span select-1-span">检查类型</span>
+                            <i></i>
+                        </div>
+                        <ul class="user-select-ul select-1-ul" style="width: 75%;z-index: 100; ">
+                            <li><a title="CT" href="javascript:;">CT</a></li>
+                            <li><a title="CT" href="javascript:;">CT</a></li>
+                            <li><a title="CT" href="javascript:;">CT</a></li>
+                            <li><a title="CT" href="javascript:;">CT</a></li>
+                            <li><a title="CT" href="javascript:;">CT</a></li>
+                            <li><a title="CT" href="javascript:;">CT</a></li>
+                        </ul>
+                    </div>
+                        
+                    </div>
+                    <div class="number fl">
+                    	<p>预约时间：</p>
+                        <input style="width: 70%;"  class="Wdate fl" onFocus="WdatePicker({lang:'zh-cn'})"/>
+                    </div>
+                    
+                </div>
+                <div class="pacs-consultation4">
+                    
+                    <a class="pacs-search-btn" href="javascript:;" >
+                        查询
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pacs-table-head width96">
+            <div class="region-result-head requery-result-head">
+               <span style="margin-left: 20px;">统计日期：2017-05-20</span>
+               <span>共开放号源：200个</span>
+               <span class="requery-resulth-span">剩余：126个</span>
+            </div>
+
+        </div>
+       
+        <div class=" width96 " style="margin-bottom: 52px;">
+              <table class="region-query-table">
+              	<thead >
+                            <tr>
+                                <th style="width: 12%;"></th>
+                                <th style="width: 11%;">时间段</th>
+                                <th style="width: 11%;">CT</th>
+                                <th style="width: 11%;">MR</th>
+                                <th style="width: 11%;">DR</th>
+                                <th style="width: 11%;">RF</th>
+                                <th style="width: 11%;">MR</th> 
+                                <th style="width: 11%;">MR</th>
+                                <th style="width: 11%;">DR</th>
+                            </tr>
+                </thead>
+                <tbody>
+                	<!--<tr class="region-qt-fitr">
+                		<td>上午</td>
+                		<td>全部</td>
+                		<td>52/88</td>
+                		<td>52/88</td>
+                		<td>52/88</td>
+                		<td>52/88</td>
+                		<td>52/88</td>
+                	</tr>
+                	<tr>
+                		<td></td>
+                		<td>6:00-7:00</td>
+                		<td>11/12</td>
+                		<td class="tt">未预约</td>
+                		<td>11/12</td>
+                		<td class="tt">未预约</td>
+                		<td class="tt">未预约</td>
+                	</tr>
+                	<tr>
+                		<td></td>
+                		<td>7:00-8:00</td>
+                		<td>8/8</td>
+                		<td>8/8</td>
+                		<td>8/8</td>
+                		<td>8/8</td>
+                		<td>8/8</td>
+                	</tr>
+                	<tr>
+                		<td></td>
+                		<td>8:00-9:00</td>
+                		<td>8/8</td>
+                		<td class="tt">未预约</td>
+                		<td>8/8</td>
+                		<td class="tt">未预约</td>
+                		<td class="tt">未预约</td>
+                	</tr>
+                	<tr>
+                		<td></td>
+                		<td>9:00-10:00</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                	</tr>
+                	<tr style="border-bottom: none;">
+                		<td></td>
+                		<td>10:00-11:00</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                	</tr>
+                	<tr class="region-qt-fitr">
+                		<td>下午</td>
+                		<td>全部</td>
+                		<td>52/88</td>
+                		<td>52/88</td>
+                		<td>52/88</td>
+                		<td>52/88</td>
+                		<td>52/88</td>
+                	</tr>
+                	<tr>
+                		<td></td>
+                		<td>6:00-7:00</td>
+                		<td>11/12</td>
+                		<td class="tt">未预约</td>
+                		<td>11/12</td>
+                		<td class="tt">未预约</td>
+                		<td class="tt">未预约</td>
+                	</tr>
+                	<tr>
+                		<td></td>
+                		<td>7:00-8:00</td>
+                		<td>8/8</td>
+                		<td>8/8</td>
+                		<td>8/8</td>
+                		<td>8/8</td>
+                		<td>8/8</td>
+                	</tr>
+                	<tr>
+                		<td></td>
+                		<td>8:00-9:00</td>
+                		<td>8/8</td>
+                		<td class="tt">未预约</td>
+                		<td>8/8</td>
+                		<td class="tt">未预约</td>
+                		<td class="tt">未预约</td>
+                	</tr>
+                	<tr>
+                		<td></td>
+                		<td>9:00-10:00</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                	</tr>
+                	<tr style="border-bottom: none;">
+                		<td></td>
+                		<td>10:00-11:00</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                		<td>4/8</td>
+                	</tr>-->
+                </tbody>
+              </table>  
+              <div class="region-unquery">
+              	<span>未查询到相关信息</span>
+              </div>
+        </div>
+      
+       
+    </div>
+    
+
+<script src="../../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../../js/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+<script src="../../js/jquery.select.js" type="text/javascript"></script>
+
+<script>
+    //消息闪动
+    function shake(ele, cls, times) {
+        var i = 0, t = false, o = ele.attr("class") + " ", c = "", times = times || 2;
+        if (t) return;
+
+        t = setInterval(function () {
+            i++;
+            c = i % 2 ? o + cls : o;
+            ele.attr("class", c);
+
+            if (i == 2 * times) {
+                clearInterval(t);
+                ele.removeClass(cls);
+            }
+        }, 200);
+    };
+</script>
+<script>
+    $(function () {
+        $.divselect(".user-select", ".user-select-ul", ".user-select-span"); 
+    });
+    
+    
+</script>
+</body>
+</html>

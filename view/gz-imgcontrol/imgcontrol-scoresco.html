@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>质控评分</title>
+    <link href="../../css/layout.css?v=upd201600405" rel="stylesheet" type="text/css"/>
+    <link href="../../css/style.css?v=upd20160427" rel="stylesheet" type="text/css"/>
+    <link href="../../js/layer/skin/layer.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/imagemanage.css?v=upd20161010" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="../../images/favicon.ico">
+    <link href="../../js/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css"/>
+    <!-- respond.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+    <script src="../../js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+        (function () {
+            if (!
+                        /*@cc-on!@*/
+                            0) return;
+            var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+            var i = e.length;
+            while (i--) {
+                document.createElement(e[i])
+            }
+        })()
+    </script>
+
+</head>
+<body class="pacs-image-con-body" >
+<div class="header imgcheader">
+    <div class="header-content">
+        <div class="head-left fl clearfixed imgchead-left">
+            <a href="#" class=""><img src="../../images/log.png" alt=""/></a>
+            <span></span>
+        </div>
+	        <ul class="head-center fl clearfixed imgchead-center">
+	           <li class="current"><a href="imgcontrol-score.html">质控评分</a></li>
+			   <li><a href="imgcontrol-assess.html">质控评估</a></li>
+	           <li><a href="imgcontrol-result.html">评估结果</a></li>
+	        </ul>
+        <div class="head-right fl clearfixed">
+            <div class="user-head">
+                <img src="../../images/user.jpg" alt=""/>
+            </div>
+            <div class="user-info imgcuser-info">
+                <p>
+                    欢迎您，<span>用户名</span>
+                    <a href="#" class="message"><i></i> <em>99+</em></a>
+                </p>
+
+                <p>
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">设置</a>
+                    <a href="javascript:;">帮助</a>
+                    <a href="javascript:;">退出</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="pacs-warp">
+    <h4>
+        <span class="width96"><a href="#">影像质控</a> ><a href='imgcontrol-score.html'  >质控评分</a></span>
+    </h4>
+    <div class="imgc-content">
+    	<div class="imgc-con-left" >
+    		<h4>
+    			<i></i>申请单信息
+    		</h4>
+    		<table class="imgc-conl-table">
+    			<tr>
+    				<td class="tt">检查类型</td>
+    				<td class="ts">CT</td>
+    				<td class="tt">检查部位</td>
+    				<td colspan="3" class="tts">头部</td>
+    			</tr>
+    			<tr>
+    				<td class="tt">医院</td>
+    				<td class="ts">北高卫生院</td>
+    				<td class="tt">申请科室</td>
+    				<td class="ts">病理科</td>
+    				<td class="tt">申请医生</td>
+    				<td class="ts">王小二</td>
+    			</tr>
+    			<tr>
+    				<td class="tt">临床诊断</td>
+    				<td colspan="5" class="tts"></td>
+    			</tr>
+    			<tr>
+    				<td class="tt">病史</td>
+    				<td colspan="5" class="tts"></td>
+    			</tr>
+    		</table>
+    		<h4>
+    			<i></i>检查信息
+    		</h4>
+    		<table class="imgc-conl-table">
+    			<tr>
+    				<td class="tt ts">临床诊断</td>
+    				<td class="wt tts">报告状态（审核完成）</td>
+    			</tr>
+    			<tr>
+    				<td class="tt ts">临床诊断</td>
+    				<td class="tts"></td>
+    			</tr>
+    			<tr>
+    				<td class="tt tss">病史</td>
+    				<td class="tts"></td>
+    			</tr>
+    		</table>
+    		<h4>
+    			<i></i>检查效率
+    		</h4>
+    		<table class="imgc-conl-table">
+    			<tr>
+    				<td class="tt ts">检查耗时</td>
+    				<td class="wt tts">31分钟（2017-11-11 18:23:15 至 2017-11-11 18:23:15）</td>
+    			</tr>
+    			<tr>
+    				<td class="tt ts">书写耗时</td>
+    				<td class="tts">31分钟（2017-11-11 18:23:15 至 2017-11-11 18:23:15）</td>
+    			</tr>
+    			<tr>
+    				<td class="tt tss">审核耗时</td>
+    				<td class="tts">31分钟（2017-11-11 18:23:15 至 2017-11-11 18:23:15）</td>
+    			</tr>
+    		</table>
+    	</div>
+    	<div class="imgc-con-right">
+    		<div class="imgc-conr-head">
+	    		<span>诊断规范：总分100</span>
+	    		<span class="imgc-conrh-sco imgc-conrh-sco1">评分指南</span>
+	    		<span>评分等级：不合格</span>
+	    		<span class="imgc-conrh-get">得分：<i>55</i></span>
+	    		<span style="display: none;">得分：<i style="color: #5b9fe3; font-weight: bold;">70</i></span>
+    		</div>
+    		<div class="imgc-conr-con">
+    			<ul class="imgc-conrc-list">
+    				<li>
+    					<span>描述内容与诊断结论欠一致</span>
+    					<span class="imgc-ccl-sco">10分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="1" />-5
+    					</label>
+    				</li>
+    				<li>
+    					<span>主要征象未描述</span>
+    					<span class="imgc-ccl-sco">15分</span>
+    					<label for="-5" class="imgc-ccl-lab" style="margin-right: 41px;">
+    						<input type="checkbox"  value="2" />-10
+    					</label>
+    				</li>
+    				<li>
+    					<span>主要征象描述不全</span>
+    					<span class="imgc-ccl-sco">5分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="3" />-5
+    					</label>
+    				</li>
+    				<li>
+    					<span>主要征象描述错误</span>
+    					<span class="imgc-ccl-sco">25分</span>
+    					<label for="-5" class="imgc-ccl-lab" style="margin-right: 41px;">
+    						<input type="checkbox"  value="4" />-15
+    					</label>
+    				</li>
+    				<li>
+    					<span>主要阴性征象未描述（指有鉴别诊断意义的阴性征象）</span>
+    					<span class="imgc-ccl-sco">5分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="5" />-5
+    					</label>
+    				</li>
+    				<li>
+    					<span>用语不规范</span>
+    					<span class="imgc-ccl-sco">10分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="6" />-5
+    					</label>
+    				</li>
+    				<li>
+    					<span>主要阴性征象未描述（指有鉴别诊断意义的阴性征象）</span>
+    					<span class="imgc-ccl-sco">5分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="7" />-5
+    					</label>
+    				</li>
+    				<li>
+    					<span>用语不规范</span>
+    					<span class="imgc-ccl-sco">10分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="8" />-5
+    					</label>
+    				</li>
+    				<li>
+    					<span>主要阴性征象未描述（指有鉴别诊断意义的阴性征象）</span>
+    					<span class="imgc-ccl-sco">5分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="9" />-5
+    					</label>
+    				</li>
+    				<li>
+    					<span>用语不规范</span>
+    					<span class="imgc-ccl-sco">10分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="10" />-5
+    					</label>
+    				</li>
+    			</ul>
+    		</div>
+    		
+    		<div class="imgc-conr-head">
+	    		<span>诊断规范：总分100</span>
+	    		<span class="imgc-conrh-sco imgc-conrh-sco2">评分指南</span>
+	    		<span>评分等级：优</span>
+	    		<span class="imgc-conrh-get">得分：<i style="color: #76b8b6;">95</i></span>
+	    		
+    		</div>
+    		<div class="imgc-conr-con">
+    			<ul class="imgc-conrc-list">
+    				<li>
+    					<span>影像对比（看电脑图片会胶片图像，对比欠佳）</span>
+    					<span class="imgc-ccl-sco">5分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="1" />-5
+    					</label>
+    				</li>
+    				<li>
+    					<span>图像层次（看电脑图片或胶片图像，层次分明）</span>
+    					<span class="imgc-ccl-sco">5分</span>
+    					<label for="-5" class="imgc-ccl-lab" style="margin-right: 41px;">
+    						<input type="checkbox"  value="2" />-10
+    					</label>
+    				</li>
+    				<li>
+    					<span>图像标识（不完整）</span>
+    					<span class="imgc-ccl-sco">5分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="3" />-5
+    					</label>
+    				</li>
+    				<li>
+    					<span>图像重要标识（如左右、姓名、性别错误）</span>
+    					<span class="imgc-ccl-sco">10分</span>
+    					<label for="-5" class="imgc-ccl-lab" style="margin-right: 41px;">
+    						<input type="checkbox"  value="4" />-15
+    					</label>
+    				</li>
+    				<li>
+    					<span>摄影部位错位（对照申请单和摄影部位是否一致）</span>
+    					<span class="imgc-ccl-sco">50分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="5" />-5
+    					</label>
+    				</li>
+    				<li>
+    					<span>投照野控制（投照野过大或包括不全）</span>
+    					<span class="imgc-ccl-sco">5分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="6" />-5
+    					</label>
+    				</li>
+    				<li>
+    					<span>图像重要标识（如左右、姓名、性别错误）</span>
+    					<span class="imgc-ccl-sco">10分</span>
+    					<label for="-5" class="imgc-ccl-lab" style="margin-right: 41px;">
+    						<input type="checkbox"  value="7" />-15
+    					</label>
+    				</li>
+    				<li>
+    					<span>摄影部位错位（对照申请单和摄影部位是否一致）</span>
+    					<span class="imgc-ccl-sco">50分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="8" />-5
+    					</label>
+    				</li>
+    				<li>
+    					<span>投照野控制（投照野过大或包括不全）</span>
+    					<span class="imgc-ccl-sco">5分</span>
+    					<label for="-5" class="imgc-ccl-lab">
+    						<input type="checkbox"  value="9" />-5
+    					</label>
+    				</li>
+    				
+    			</ul>
+    		</div>
+    		
+    		<input class="imgc-conr-put" type="button" value="提交"/>
+    		
+    	</div>
+    </div>
+</div>   
+
+
+<div class="imgc-guide-layer" id="imgcvedio" style="display: none;">
+	<h1>评分指南</h1>
+	<div class="imgc-gul-con">
+		
+    	<h2 class="imgc-gul-h2">诊断规范评分指南</h2>
+    	<h3 class="imgc-gul-h3">DR影像质量要求</h3>
+    	<h4 class="imgc-gul-h4">（一） 一般要求</h4>
+    	<div class="imgc-gulh-list">
+    		<span>1、X线照片满足影像诊断要求。</span>
+    		<span>2、X线照片标识、左右标志正确，检查号、检查日期、检查医院、被检者姓名、性别、年龄、图象放大比例或比例尺等信息完整。</span>
+    		<span>3、用片尺寸统一，用片尺寸合理，分格规范，照射野大小控制适当。成人胸片不小于11×14英寸。</span>
+    		<span>4、图像放大比例一致：正位片与侧位片或斜位片放大比例一致。同一部位不同时间摄片放大比例一致。成人胸片放大比例不小于65%。5、整体画面布局美观，影像无失真变形。</span>
+    	</div>
+    	<h4 class="imgc-gul-h4">（二） 除上述一般要求外，优质图像标准</h4>
+    	<div class="imgc-gulh-list">
+    		<span>1、密度合适（照片中诊断密度范围控制在0.25~2.0D之间）。</span>
+    		<span>2、层次分明：参照《放射科管理与技术规范》放射科技术质量标准。
+</span>
+    		<span>3、摄影体位正确：参照《放射科管理与技术规范》放射科技术质量标准。组织影像应符合正常的解剖投影，无失真。</span>
+    		<span>4、照射野大小合适：被检部位影像全部在照片上显示，但不应过多包含非检查部位，尤其是内分泌腺；重点组织界限清楚；脊柱应含相邻椎体；四肢长骨至少应包括1个邻近关节；肋骨应包括第1或第12肋骨。
+</span>
+			<span>5、无体外伪影。</span>
+			<span>6、无运动伪影。</span>
+			<span>7、特殊检查体位应标注。</span>
+			<span>8、胶片无污片、划片、粘片、指纹。</span>
+    	</div>
+    	<h4 class="imgc-gul-h4">（三） CT、MRI影像质量要求</h4>
+    	<div class="imgc-gulh-list">
+    		<span>1、根据临床检查要求和疾病诊断需要，合理选择扫描范围、扫描参数、检查序列。</span>
+    		<span>2、扫描范围必须包括整个被检查器官或部位。</span>
+    		<span>3、选择合适窗宽窗位，因头部外伤的头颅CT扫描必须有骨窗。肺部扫描必须有肺窗和纵隔窗。</span>
+    		<span>4、对于CT检查，在满足诊断的前提下，尽量减少X线剂量。</span>
+    		<span>5、定位标识明确，一般信息完整。</span>
+    		<span>6、增强扫描增强效果良好。</span>
+    		<span>7、CT、MR照片应有定位相。</span>
+    		<span>8、CT、MR照片排列顺序：横断位：躯干从上到下、四肢由近到远；冠状位：由前到后；矢状位：由右到左。</span>
+    		<span>9、对不同检查部位的CT影像质量标准，参照浙江省《放射科管理与技术规范》第五章第二节，CT影像标准。</span>
+    	</div>
+    	
+    </div>	
+    
+    <input type="button" class="imgc-gulh-input" name="" id="" value="同意并继续" />
+</div>
+
+<div class="imgc-guide-layer" id="imgcguide" style="display: none;">
+	<h1>评分指南</h1>
+	<div class="imgc-gul-con">
+		
+    	<h2 class="imgc-gul-h2">诊断规范评分指南</h2>
+    	<h3 class="imgc-gul-h3">诊断报告书写格式和质量评价标准</h3>
+    	<h4 class="imgc-gul-h4">（一） 诊断报告书写格式 参照我科《影像诊断报告书写规范》</h4>
+    	<h4 class="imgc-gul-h4">（二） 承诺出报告时间</h4>
+    	<div class="imgc-gulh-list">
+    		<span>1、X线平片报告：急诊30分钟，普通2小时；胃肠等特殊造影：当日出片。</span>
+    		<span>2、CT、MR报告：急诊30分钟，普通24小时内（隔日上午9点30分前）。</span>
+    		<span>3、特殊病例在与患者及家属沟通后于48小时内发出。</span>
+    	</div>
+    	<h4 class="imgc-gul-h4">（三） 诊断报告质量评价标准</h4>
+    	<div class="imgc-gulh-list">
+    		<span>1、良好的影像诊断报告：书写格式符合诊断报告书写规范。要求项目齐全，影像描写如实反映影像学改变，影像描述与诊断意见一致，重点突出，条理清楚，术语准确，字迹清析。</span>
+    		<span>2、不符合影像诊断报告要求的：①影像描述与诊断意见矛盾；②书写过于简单；③用语不规范；④病灶主要象征未描述错误；⑤字迹不清。
+</span>
+    	</div>
+    	<h3 class="imgc-gul-h3">影像科诊断报告书写规范</h3>
+    	<p class="imgc-gul-p">  影像诊断报告是一份重要的临床档案资料，必须认真书写。一份规范化的诊断报告书要求文字简洁，语句通顺，表达准确。内容包括以下部分：</p>
+    	<h4 class="imgc-gul-h4">（一） 一般项目</h4>
+    	<div class="imgc-gulh-list">
+    		<span>1、病人姓名、性别、年龄；X线号、门诊号或住院号</span>
+    		<span>2、申请科室、病室和床位号；检查设备、检查方法、造影剂种类用法和用量、检查部位和位置、照片序号</span>
+    		<span>3、临床诊断、检查日期和报告日期等均应逐项填写清楚。</span>
+    	</div>
+    	<h4 class="imgc-gul-h4">（二） 叙述部分</h4>
+    	<div class="imgc-gulh-list">
+    		<span>1、应在全面观察的基础上，分清主次，按顺序描述异常影像所见。阐明有否临床所疑疾病的表现或征象，如有则应对所出现的病变部位、形态和大小进行描述，描述应简洁、形象、贴切，并对该疾病应该或可能出现而未出现者说明“未见”。如：肺癌的毛刺征；骨、关节病变的死骨、钙化和骨膜反应、关节面及关节间隙等。此外，还应对与疾病的定位和定性有关的表现或征象说明“见到”或“未见”如：肠梗阻有无充气扩张肠管有无液平，形态、位置如何，有无青鱼骨刺征，假肿瘤征等。 </span>
+    		<span>2、意外或偶然发现临床所疑疾病以外的疾病征象如：外伤发现骨软骨瘤、退变、各种正常变异等应在诊断意见里体现。</span>
+    		<span>3、成像伪影、外影应在描述中加以说明；难于解释和不能据此作出影像诊断的一些表现等，应在描述后建议作进一步检查，以明确这些表现的意义。
+</span>
+    	</div>
+    	<h4 class="imgc-gul-h4">（三） 诊断意见</h4>
+    	<div class="imgc-gulh-list">
+    		<span>在详细描述的基础上以影像表现为依据，结合有关临床资料进行综合分析，逻辑推理，以得出客观的诊断结论。临床和影像表现典型者肯定诊断；影像表现缺乏特征性者，可结合临床诊断；影像表现和临床均无特征性而难于下结论时，可提出某种或某些诊断可能性以及进一步检查的建议。
+</span>
+    	</div>
+    	<h4 class="imgc-gul-h4">（四） 医师签署</h4>
+    	<div class="imgc-gulh-list">
+    		<span> 一份完整的影像诊断报告，应有医师签名。书写者在“书写医师”项签名，最好为住院医师或以上；另一医师在“核对医师”项签名，最好为主治医师以上。如有技师（士）和护理人员参与检查，则亦应签署或注明。医师签名字迹应工整，易于辨认和保存
+</span>
+    	</div>
+    </div>	
+    
+    <input type="button" class="imgc-gulh-input" name="" id="" value="同意并继续" />
+</div>
+
+<script src="../../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../../js/scrollbar/jquery.mCustomScrollbar.min.js"></script>
+<script src="../../js/layer/layer.js" type="text/javascript"></script>
+
+<script>
+    //消息闪动
+    function shake(ele, cls, times) {
+        var i = 0, t = false, o = ele.attr("class") + " ", c = "", times = times || 2;
+        if (t) return;
+
+        t = setInterval(function () {
+            i++;
+            c = i % 2 ? o + cls : o;
+            ele.attr("class", c);
+
+            if (i == 2 * times) {
+                clearInterval(t);
+                ele.removeClass(cls);
+            }
+        }, 200);
+    };
+</script>
+<script>
+    $(function () {
+       $(".imgc-conr-con").mCustomScrollbar();
+       $(".imgc-gul-con").mCustomScrollbar();
+       $('.imgc-conrh-sco1').click(function(){
+	        layer.open({
+	        type: 1,
+	        title: false,
+	        area:['660px', '500px'],
+	        content: $('#imgcguide')
+	   		 });
+   		 })
+       $('.imgc-conrh-sco2').click(function(){
+	        layer.open({
+	        type: 1,
+	        title: false,
+	        area:['660px', '500px'],
+	        content: $('#imgcvedio')
+	   		 });
+   		 })
+    });
+    
+    
+</script>
+</body>
+</html>

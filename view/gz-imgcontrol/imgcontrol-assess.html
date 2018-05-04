@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>质控评分</title>
+    <link href="../../css/layout.css?v=upd201600405" rel="stylesheet" type="text/css"/>
+    <link href="../../css/style.css?v=upd20160427" rel="stylesheet" type="text/css"/>
+    <link href="../../js/layer/skin/layer.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/imagemanage.css?v=upd20161010" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="../../images/favicon.ico">
+    <link href="../../js/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css"/>
+    <!-- respond.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+    <script src="../../js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+        (function () {
+            if (!
+                        /*@cc-on!@*/
+                            0) return;
+            var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+            var i = e.length;
+            while (i--) {
+                document.createElement(e[i])
+            }
+        })()
+    </script>
+<style>
+    .pacs-consultation2 .user-select{width: 97%;}
+</style>
+</head>
+<body class="pacs-image-con-body" >
+<div class="header imgcheader">
+    <div class="header-content">
+        <div class="head-left fl clearfixed imgchead-left">
+            <a href="#" class=""><img src="../../images/log.png" alt=""/></a>
+            <span></span>
+        </div>
+	        <ul class="head-center fl clearfixed imgchead-center">
+	           <li ><a href="imgcontrol-score.html">质控评分</a></li>
+			   <li class="current"><a href="imgcontrol-assess.html">质控评估</a></li>
+	           <li><a href="imgcontrol-result.html">评估结果</a></li>
+	        </ul>
+        <div class="head-right fl clearfixed">
+            <div class="user-head">
+                <img src="../../images/user.jpg" alt=""/>
+            </div>
+            <div class="user-info imgcuser-info">
+                <p>
+                    欢迎您，<span>用户名</span>
+                    <a href="#" class="message"><i></i> <em>99+</em></a>
+                </p>
+
+                <p>
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">设置</a>
+                    <a href="javascript:;">帮助</a>
+                    <a href="javascript:;">退出</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="pacs-warp">
+    <h4>
+        <span class="width96"><a href="#">影像质控</a> ><a href='imgcontrol-assess.html'>质控评估</a></span>
+    </h4>
+    <div id="image-con" class="report-list">
+        <div class="width96 pacs-content">
+            <div class="query-content pacs-consultation clearfixed">
+                
+                <div class="pacs-consultation2" style="width: 23%; margin-right: 2%;">
+                    <i></i> 
+                    <i></i>
+
+                    <div class="user-select pacs-select" style="margin-top: 18px;">
+                        <p style="width: 28%;">选择医院：</p>
+
+                        <div class="grey-select" style="min-width: 80px; float: left; width: 71%;">
+                            <span class="user-select-span select-1-span">所有医院</span>
+                            <i></i>
+                        </div>
+                        <ul class="user-select-ul select-1-ul" style="width: 71%;z-index: 100; left: 28%;">
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="pacs-consultation3 clearfixed " style="width: 75%;">
+                    <div class="number fl" style="width: 30.6%;">
+						<div class="user-select pacs-select" style="margin-top: 0px; width: 100%;">
+                        	<p style="width: 28%;">检查类型：</p>
+	                        <div class="grey-select" style="min-width: 80px; float: left; width: 69%;">
+	                            <span class="user-select-span select-1-span">所有类型</span>
+	                            <i></i>
+	                        </div>
+	                        <ul class="user-select-ul select-1-ul" style="width: 69%;z-index: 100; left: 28%;">
+	                            <li><a title="CT" href="javascript:;">CT</a></li>
+	                            <li><a title="CT" href="javascript:;">CT</a></li>
+	                            <li><a title="CT" href="javascript:;">CT</a></li>
+	                            <li><a title="CT" href="javascript:;">CT</a></li>
+	                            <li><a title="CT" href="javascript:;">CT</a></li>
+	                            <li><a title="CT" href="javascript:;">CT</a></li>
+	                        </ul>
+                    </div>
+                        
+                    </div>
+                    <div class="number fl pacs-consultation-time imgc-time" style="width: 41%; margin-left: 2%;">
+                    	<div class="pacs-query-time imgc-query-time fl">
+                            	<p style="width: 20%;">检查时间：</p>
+                                <input class="Wdate fl" style="width: 36%;"  onFocus="WdatePicker({lang:'zh-cn'})"/>
+                                <b class="fl">～</b>
+                                <input class="Wdate fl" style="margin-left: 1%; width: 36%;" onFocus="WdatePicker({lang:'zh-cn'})"/>
+                            </div>
+                    </div>
+                    <div class="number fl pacs-consultation-time imgc-time" style="width: 26.4%;">
+                    	 <div style="width:100%;" class="fl imgc-button">
+                            <a class="reset-btn" href="javascript:;" >重置</a>
+                    <a class="pacs-search-btn" href="javascript:;" >
+                        查询
+                    </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="pacs-table-head width96">
+            <div class="region-result-head  imgca-result-head">
+               <ul class="region-r-h-ul clearfix imgca-r-h-ul">
+               	<li class="region-rh-li2  imgca-rh-li2  ">
+               		<a href="#">
+               			<i class="imgca-rh-li2"></i>
+               			<span>评估</span>
+               		</a>
+               	</li>
+               	<li class="region-rh-li1 imgca-rh-li1">
+               		<a href="imgcontrol-assessbar.html">
+               			<i class="imgca-rh-li1"></i>
+               			<span>各医院评分柱状图</span>
+               		</a>
+               	</li>
+               </ul>
+            </div>
+            <ul class="clearfix imgc-head-ul">
+                <li style="width:20%;" >就诊医院</li>
+                <li style="width:16%;" >检查类型</li>
+                <li style="width:16%;" >评估记录</li>
+                <li style="width:16%;" >平均分</li>
+                <li style="width:16%;" >摄片规范</li>
+                <li style="width:16%;" >诊断规范</li>
+                
+            </ul>
+        </div>
+        <div class="pacs-con-top" >
+            <div class="pacs-content width96 result-table-box" style="height: 1000px; overflow: hidden; background: #fff;">
+                <table id="consultation-result-table" class="result-table imgca-table">
+                    <thead>
+                    <tr >
+                        <th width="20%"></th>
+                        <th width="16%"></th>
+                        <th width="16%"></th>
+                        <th width="16%"></th>
+                        <th width="16%"></th>
+                        <th width="16%"></th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tac">内蒙古卫生院</td>
+                        <td class="tac">全部</td>
+                        <td class="tac">39</td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        
+                    </tr>
+                    <tr class="imgca">
+                        <td class="tac"></td>
+                        <td class="tac">CT</td>
+                        <td class="tac">30</td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        
+                    </tr>
+                    <tr >
+                        <td class="tac"></td>
+                        <td class="tac">DR</td>
+                        <td class="tac">5</td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        
+                    </tr>
+                    <tr class="imgca">
+                        <td class="tac"></td>
+                        <td class="tac">MR</td>
+                        <td class="tac"4</td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        
+                    </tr>
+                    <tr >
+                        <td class="tac">上海同济大学</td>
+                        <td class="tac">全部</td>
+                        <td class="tac">39</td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        
+                    </tr>
+                    <tr class="imgca">
+                        <td class="tac"></td>
+                        <td class="tac">CT</td>
+                        <td class="tac">30</td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        
+                    </tr>
+                    <tr >
+                        <td class="tac"></td>
+                        <td class="tac">DR</td>
+                        <td class="tac">5</td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        
+                        
+                    </tr>
+                    <tr class="imgca">
+                        <td class="tac"></td>
+                        <td class="tac">CT</td>
+                        <td class="tac">30</td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        
+                    </tr>
+                    <tr >
+                        <td class="tac"></td>
+                        <td class="tac">DR</td>
+                        <td class="tac">5</td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        
+                        
+                    </tr>
+                    <tr class="imgca">
+                        <td class="tac"></td>
+                        <td class="tac">CT</td>
+                        <td class="tac">30</td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        <td class="tac">
+                        	92.55
+                        	<div class="imgca-mark" style="display: none;">
+                        		<i></i>
+                        		<div>
+                        			<p>
+                        				<span>优：14份</span>
+                        				<span>良：20份</span>
+                        				<span>合格：2份</span>
+                        			</p>
+                        			<p>
+                        				<span style="margin-right: 11px;">不合格：1份</span>
+                        				<span>差：1份</span>
+                        				
+                        			</p>
+                        		</div>
+                        	</div>
+                        </td>
+                        
+                    </tr>
+                    
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        
+        <div class="imgca-bottom width96">
+            <ul class="imgca-bo-ul">
+            	<li class="current">扣分明细</li>
+            	<li >图表分析</li>
+            </ul>
+            
+            <div class="imgca-bo-con" >
+            	<div class="imgca-boc-top">
+            		<span class="imgca-boct-left">扣分项目名称</span>
+            		<span class="imgca-boct-right">出现次数</span>
+            	</div>
+            	<div class="imgca-conr-con">
+	    			<ul class="imgca-conrc-list">
+	    				<li>
+	    					<span>1、伪影（不影响诊断的伪影，如内衣扣、金属线）</span>
+	    					<span class="imgca-ccl-sco">10</span>
+	    				</li>
+	    				<li>
+	    					<span>2、图像标识（不完整）</span>
+	    					<span class="imgca-ccl-sco">15</span>
+	    				</li>
+	    				<li>
+	    					<span>3、描写简单</span>
+	    					<span class="imgca-ccl-sco">15</span>
+	    				</li>
+	    				<li>
+	    					<span>4、摄影体位（不标准）</span>
+	    					<span class="imgca-ccl-sco">15</span>
+	    				</li>
+	    				<li>
+	    					<span>5、主要征象描述不全</span>
+	    					<span class="imgca-ccl-sco">5</span>
+	    				</li>
+	    				<li>
+	    					<span>6、主要征象描述错误</span>
+	    					<span class="imgca-ccl-sco">25</span>
+	    				</li>
+	    				<li>
+	    					<span>7、图像重要标识（如左右、姓名、性别错误）/span>
+	    					<span class="imgca-ccl-sco">25</span>
+	    				</li>
+	    				<li>
+	    					<span>8、用语不规范</span>
+	    					<span class="imgca-ccl-sco">25</span>
+	    				</li>
+	    				<li>
+	    					<span>9、主要阴性征象未描述（指有鉴别诊断意义的阴性征象）</span>
+	    					<span class="imgca-ccl-sco">5</span>
+	    				</li>
+	    				<li>
+	    					<span>10、伪影（呼吸伪影和运动伪影）</span>
+	    					<span class="imgca-ccl-sco">10</span>
+	    				</li>
+	    				<li>
+	    					<span>10、伪影（呼吸伪影和运动伪影）</span>
+	    					<span class="imgca-ccl-sco">10</span>
+	    				</li>
+	    				<li>
+	    					<span>10、伪影（呼吸伪影和运动伪影）</span>
+	    					<span class="imgca-ccl-sco">10</span>
+	    				</li>
+	    				
+	    			</ul>
+    		</div>
+            </div>
+            
+            <div class="imgca-bo-chart" style="display: none;">
+            	<div id="container" style="width:580px;height:370px; float: left;"></div>
+            	<div class="imgca-boch-list">
+            		<div class="imgca-bcl-head">
+            			<span class="imgca-bclh-span1">扣分项目</span>
+            			<span class="imgca-bclh-span2">次数</span>
+            			<span class="imgca-bclh-span3">百分比</span>
+            		</div>
+            		<ul class="imgca-bcl-ul">
+            			<li class="imaca-bcl-li1">
+            				<i></i>
+            				<span class="imgca-bcli-s1">1.伪影（不影响诊断的伪影，如内衣扣、金属线）</span>
+            				<span class="imgca-bcli-s2">15</span>
+            				<span class="imgca-bcli-s3">32</span>
+            			</li>
+            			<li class="imaca-bcl-li2">
+            				<i></i>
+            				<span class="imgca-bcli-s1">2.图像标识（不完整）</span>
+            				<span class="imgca-bcli-s2">2</span>
+            				<span class="imgca-bcli-s3">10</span>
+            			</li>
+            			<li class="imaca-bcl-li3">
+            				<i></i>
+            				<span class="imgca-bcli-s1">3.描写简单</span>
+            				<span class="imgca-bcli-s2">2</span>
+            				<span class="imgca-bcli-s3">10</span>
+            			</li>
+            			<li class="imaca-bcl-li4">
+            				<i></i>
+            				<span class="imgca-bcli-s1">4.摄影体位（不标准）</span>
+            				<span class="imgca-bcli-s2">2</span>
+            				<span class="imgca-bcli-s3">10</span>
+            			</li>
+            			<li class="imaca-bcl-li5">
+            				<i></i>
+            				<span class="imgca-bcli-s1">5.主要征象描述不全</span>
+            				<span class="imgca-bcli-s2">2</span>
+            				<span class="imgca-bcli-s3">10</span>
+            			</li>
+            			<li class="imaca-bcl-li6">
+            				<i></i>
+            				<span class="imgca-bcli-s1">6.主要征象描述错误</span>
+            				<span class="imgca-bcli-s2">2</span>
+            				<span class="imgca-bcli-s3">10</span>
+            			</li>
+            			<li class="imaca-bcl-li7">
+            				<i></i>
+            				<span class="imgca-bcli-s1">7.图像重要标识（如左右、姓名、性别错误）</span>
+            				<span class="imgca-bcli-s2">2</span>
+            				<span class="imgca-bcli-s3">10</span>
+            			</li>
+            			<li class="imaca-bcl-li8">
+            				<i></i>
+            				<span class="imgca-bcli-s1">8.用语不规范</span>
+            				<span class="imgca-bcli-s2">2</span>
+            				<span class="imgca-bcli-s3">10</span>
+            			</li>
+            			<li class="imaca-bcl-li9">
+            				<i></i>
+            				<span class="imgca-bcli-s1">9.主要阴性征象未描述（指有鉴别诊断意义的阴性征象）</span>
+            				<span class="imgca-bcli-s2">2</span>
+            				<span class="imgca-bcli-s3">10</span>
+            			</li>
+            			<li class="imaca-bcl-li10">
+            				<i></i>
+            				<span class="imgca-bcli-s1">10.伪影（呼吸伪影和运动伪影）</span>
+            				<span class="imgca-bcli-s2">2</span>
+            				<span class="imgca-bcli-s3">10</span>
+            			</li>
+            			<li class="imaca-bcl-li11">
+            				<i></i>
+            				<span class="imgca-bcli-s1">11.图像重要标识（如左右、姓名、性别错误）</span>
+            				<span class="imgca-bcli-s2">2</span>
+            				<span class="imgca-bcli-s3">10</span>
+            			</li>
+            		</ul>
+            	</div>
+            </div>
+            
+        </div>
+        
+        
+    </div>  
+</div>
+
+<div class="imgca-ass-layer" id="assess" style="display: none;">
+	<h1>质控评估</h1>
+	<div class="imgca-al-result">
+		结果名称：
+		<input type="text" value="上海同济医院20171111评估反馈" />
+	</div>
+	<div class="imgca-al-list">
+		<div class="imgca-all-ass">
+			评估时间：
+			<input type="text" value="2017-11-11 23:00"/>
+		</div>
+		<div class="imgca-all-ass">
+			被评医院：
+			<input type="text" value="浙二医院"/>
+		</div>
+		<div class="imgca-all-num">
+			评估数：
+			<input type="text" value="205"/>
+		</div>
+		<div class="imgca-all-num">
+			平均分：
+			<input type="text" value="92.55"/>
+		</div>
+	</div>
+	<div class="imgca-al-reason">
+		<p>整改原因：</p>
+		<textarea name="" rows="" cols=""></textarea>
+	</div>
+	<div class="imgca-al-reason">
+		<p>整改方法：</p>
+		<textarea name="" rows="" cols=""></textarea>
+	</div>
+	<div class="imgca-al-asslist">
+		<div class="imgca-all-ass">
+			评估医院：
+			<input type="text" value=" "/>
+		</div>
+		<div class="imgca-all-ass">
+			评估人：
+			<input type="text" value=" "/>
+		</div>
+		<div class="imgca-all-num">
+			整改时间：
+			<input type="text" value=" "/>
+		</div>
+		
+	</div>
+	<div class="imgca-al-up">
+		<input type="button"  value="提交评估结果"/>
+	</div>
+</div>
+<script src="../../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../../js/scrollbar/jquery.mCustomScrollbar.min.js"></script>
+<script src="../../js/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+<script src="../../js/jquery.select.js" type="text/javascript"></script>
+<script src="../../js/layer/layer.js" type="text/javascript"></script>
+<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+<script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+
+<script>
+    //消息闪动
+    function shake(ele, cls, times) {
+        var i = 0, t = false, o = ele.attr("class") + " ", c = "", times = times || 2;
+        if (t) return;
+
+        t = setInterval(function () {
+            i++;
+            c = i % 2 ? o + cls : o;
+            ele.attr("class", c);
+
+            if (i == 2 * times) {
+                clearInterval(t);
+                ele.removeClass(cls);
+            }
+        }, 200);
+    };
+    $(function () {
+
+        $(window).resize(function(){
+            init();
+        });
+
+        shake($(".message"), "alert", 8);
+
+        $(".consultation-result-head span").click(function () {
+            var i = $(this).attr("class");
+            var len = $("#consultation-result-table tbody tr").length;
+//            var trs = [];
+            trs = [];
+            if (i == "result-head-con") {
+                for (var i = 0; i < len; i++) {
+                    if ($("#consultation-result-table tbody tr").eq(i).find("td").eq("11").text() == "待诊断") {
+                        trs.push($("#consultation-result-table tbody tr").eq(i).find("td").eq("11").parent());
+                        $("#consultation-result-table tbody tr").eq(i).find("td").eq("11").parent().siblings().hide();
+                    }
+                }
+                for (var i = 0; i < trs.length; i++) {
+                    trs[i].show();
+                }
+            } else if (i == "result-head-examine") {
+
+            } else {
+                for (var i = 0; i < len; i++) {
+                    if ($("#consultation-result-table tbody tr").eq(i).find("td").eq("11").text() == "已完成") {
+                        trs.push($("#consultation-result-table tbody tr").eq(i).find("td").eq("11").parent());
+                        $("#consultation-result-table tbody tr").eq(i).find("td").eq("11").parent().siblings().hide();
+                    }
+                }
+                for (var i = 0; i < trs.length; i++) {
+                    trs[i].show();
+                }
+            }
+        });
+        function init() {
+
+            var clickY, topOffset;
+            var dragging = false;
+            var doc = document;
+            var coor = $("#coor");
+
+            var maxHeight = $(window).height();
+            var headH = $(".header").height();
+            var h4H = $("h4").height();
+            var queryH = $(".pacs-content").height();
+            var tableH = $(".pacs-table-head").height();
+            var pageH = 20;
+            var selectul=$(".imgca-bo-ul").height();
+            //高度计算
+            var h = maxHeight-headH-h4H-queryH-tableH-pageH-selectul;
+            var boxH = h >412 ? 412 : h;
+            $(".pacs-con-top").height(boxH);
+            $(".pacs-con-top").mCustomScrollbar();
+            $("#mCSB_1_container").css("margin-right","0");
+            $("#mCSB_2_container").css("margin-right","0");
+
+           
+
+        };
+
+
+       $(window).load(function () {
+        	
+        	$('.result-table tr').click(function(){
+        		//console.log(11);
+    			$('.result-table tr').removeClass('current');
+    			$(this).addClass('current');
+    		})
+            init();
+            $(".bghj-content").mCustomScrollbar();
+            $(".part-bghj-right").mCustomScrollbar();
+            $(".pacs-bottom-btn6").click(function () {
+                var maxHeight = $(window).height();//662
+                var headH = $(".header").height();//80
+                var h4H = $("h4").height();//82
+                var queryH = 165;
+                var tableH = 50;
+                var pageH = 70;
+                $(".pacs-con-top").show();
+                //高度计算
+                $(".pacs-con-page").height(70);
+                $("#pacs-con-top").height(maxHeight-headH-h4H-queryH-tableH-pageH-20);
+        
+            });
+        });
+        
+        
+        
+        
+    })
+</script>
+<script>
+    $(function () {
+        $.divselect(".user-select", ".user-select-ul", ".user-select-span");
+        $(".imgca-conr-con").mCustomScrollbar();
+        $('.imgca-bo-ul li').mouseover(function(){ //最下面的切换
+        	$('.imgca-bo-ul li').removeClass('current');
+        	$(this).addClass('current');
+        	var indexVal=$(this).index();
+        	if(indexVal=='0'){
+        		$('.imgca-bo-con').show();
+        		$('.imgca-bo-chart').hide();
+        	}
+        	else if(indexVal=='1'){
+        		$('.imgca-bo-con').hide();
+        		$('.imgca-bo-chart').show();
+        	}
+        })
+         $('.imgca-rh-li2').click(function(){
+	        layer.open({
+	        type: 1,
+	        title: false,
+	        area:['788px', '500px'],
+	        content: $('#assess')
+	   		 });
+   		 })
+            $('.result-table tr').click(function(){
+                //console.log(11);
+                $('.result-table tr').removeClass('current');
+                $(this).addClass('current');
+            })
+         $('.imgca-table td').mouseover(function(){
+         	$(this).find('.imgca-mark').show();
+         })
+         $('.imgca-table td').mouseout(function(){
+         	$('.imgca-mark').hide();
+         })
+         
+         $('.region-r-h-ul li').click(function(){
+        	$('.region-r-h-ul li').removeClass('current');
+        	$('.region-r-h-ul li').removeClass('imgca-rh-back2');
+        	$('.region-r-h-ul li').removeClass('imgca-rh-back1');
+        	$(this).addClass('current');
+        	var indexVal=$(this).index();
+        	if(indexVal=='0'){
+        		$(this).addClass('imgca-rh-back2');
+        	}
+        	else if(indexVal=='1'){
+        		$(this).addClass('imgca-rh-back1');
+        	}
+        	
+        })
+    });
+    
+    
+</script>
+<script>
+	$(function () {
+    $('#container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: ''
+        },
+        credits: {  
+          	enabled:false  
+		}, 
+		exporting: {  
+            enabled:false  
+		}, 
+        tooltip: {
+            headerFormat: '{series.name}<br>',
+            pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: '扣分明细',
+            data: [
+                ['伪影',   32.0],
+                ['图像标识',       6.0],
+                {
+                    name: '描写简单',
+                    y: 10.0,
+                    sliced: true,
+                    selected: true
+                },
+                ['摄影体位',    6.0],
+                ['主要征象描述不全',     6.0],
+                ['主要征象描述错误',   6.0],
+                ['图像重要标识',    6.0],
+                ['用语不规范',     6.0],
+                ['主要阴性征象未描述',   6.0],
+                ['伪影',     6.0],
+                ['图像重要标识',   10.0],
+            ]
+        }]
+    });
+});
+</script>
+</body>
+</html>

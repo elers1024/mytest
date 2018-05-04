@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>质控评分</title>
+    <link href="../../css/layout.css?v=upd201600405" rel="stylesheet" type="text/css"/>
+    <link href="../../css/style.css?v=upd20160427" rel="stylesheet" type="text/css"/>
+    <link href="../../js/layer/skin/layer.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/imagemanage.css?v=upd20161010" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="../../images/favicon.ico">
+    <link href="../../js/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css"/>
+    <!-- respond.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+    <script src="../../js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+<style>
+    .pacs-consultation2 .user-select{width: 97%;}
+</style>
+</head>
+<body class="pacs-image-con-body" >
+<div class="header imgcheader">
+    <div class="header-content">
+        <div class="head-left fl clearfixed imgchead-left">
+            <a href="#" class=""><img src="../../images/log.png" alt=""/></a>
+            <span></span>
+        </div>
+	        <ul class="head-center fl clearfixed imgchead-center">
+	           <li ><a href="imgcontrol-score.html">质控评分</a></li>
+			   <li ><a href="imgcontrol-assess.html">质控评估</a></li>
+	           <li class="current"><a href="imgcontrol-result.html">评估结果</a></li>
+	        </ul>
+        <div class="head-right fl clearfixed">
+            <div class="user-head">
+                <img src="../../images/user.jpg" alt=""/>
+            </div>
+            <div class="user-info imgcuser-info">
+                <p>
+                    欢迎您，<span>用户名</span>
+                    <a href="#" class="message"><i></i> <em>99+</em></a>
+                </p>
+
+                <p>
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">设置</a>
+                    <a href="javascript:;">帮助</a>
+                    <a href="javascript:;">退出</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="pacs-warp">
+    <h4>
+        <span class="width96"><a href="#">影像质控</a> ><a href='imgcontrol-result.html'>评估结果</a></span>
+    </h4>
+    <div id="image-con" class="report-list">
+        <div class="width96 pacs-content">
+            <div class="query-content pacs-consultation clearfixed">
+                
+                <div class="pacs-consultation2" style="width: 23%; margin-right: 2%;">
+                    <i></i> 
+                    <i></i>
+
+                    <div class="user-select pacs-select" style="margin-top: 18px;">
+                        <p style="width: 28%;">选择医院：</p>
+
+                        <div class="grey-select" style="min-width: 80px; float: left; width: 71%;">
+                            <span class="user-select-span select-1-span">所有医院</span>
+                            <i></i>
+                        </div>
+                        <ul class="user-select-ul select-1-ul" style="width: 71%;z-index: 100; left: 28%;">
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                            <li><a title="上海交通大学医学院附属上海儿童医学中心" href="javascript:;">上海交通大学医学院附属上海儿童医学中心</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="pacs-consultation3 clearfixed " style="width: 75%;">
+                    <div class="number fl" style="width: 30.6%;">
+						<div class="user-select pacs-select" style="margin-top: 0px; width: 100%;">
+                        	<p style="width: 24%;">评估人：</p>
+	                        <div class="grey-select" style="min-width: 80px; float: left; width: 69%;">
+	                            <span class="user-select-span select-1-span">王小二</span>
+	                            <i></i>
+	                        </div>
+	                        <ul class="user-select-ul select-1-ul" style="width: 69%;z-index: 100; left: 24%;">
+	                            <li><a title="王小二" href="javascript:;">王小二</a></li>
+	                            <li><a title="王小二" href="javascript:;">王小二</a></li>
+	                            <li><a title="王小二" href="javascript:;">王小二</a></li>
+	                            <li><a title="王小二" href="javascript:;">王小二</a></li>
+	                            <li><a title="王小二" href="javascript:;">王小二</a></li>
+	                            <li><a title="王小二" href="javascript:;">王小二</a></li>
+	                        </ul>
+                    </div>
+                        
+                    </div>
+                    <div class="number fl pacs-consultation-time imgc-time" style="width: 41%;">
+                    	<div class="pacs-query-time imgc-query-time fl">
+                            	<p style="width: 20%;">评估时间：</p>
+                                <input class="Wdate fl" style="width: 36%;"  onFocus="WdatePicker({lang:'zh-cn'})"/>
+                                <b class="fl">～</b>
+                                <input class="Wdate fl" style="margin-left: 1%; width: 36%;" onFocus="WdatePicker({lang:'zh-cn'})"/>
+                            </div>
+                    </div>
+                    <div class="number fl pacs-consultation-time imgc-time" style="width: 28.4%;">
+                    	 <div style="width:100%;" class="fl imgc-button">
+                            <a class="reset-btn" href="javascript:;" >重置</a>
+                    <a class="pacs-search-btn" href="javascript:;" >
+                        提交
+                    </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="pacs-table-head width96" style="margin-top: 10px;">
+            <ul class="clearfix imgc-head-ul">
+                <li style="width:10%;" >评估人</li>
+                <li style="width:10%;" >评分结果名称</li>
+                <li style="width:20%;" >所评医院</li>
+                <li style="width:15%;" >评估时间</li>
+                <li style="width:21%;" >整改原因</li>
+                <li style="width:24%;" >整改措施</li>
+                
+            </ul>
+        </div>
+        <div class="pacs-con-top" >
+            <div class="pacs-content width96 result-table-box" style="height: 1000px; overflow: hidden; background: #fff;">
+                <table id="consultation-result-table" class="result-table imgca-table">
+                    <thead>
+                    <tr >
+                        <th width="10%"></th>
+                        <th width="10%"></th>
+                        <th width="20%"></th>
+                        <th width="15%"></th>
+                        <th width="21%"></th>
+                        <th width="24%"></th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="tac">王小二</td>
+                        <td class="tac">优</td>
+                        <td class="tac" limit="15">浙江大学医学院附属妇产科医院</td>
+                        <td class="tac">2017-11-11 12:20</td>
+                        <td class="tac">出报告时间太慢</td>
+                        <td class="tac" limit="35">报告写的不规范，报告写的不规范，报告写的不规范，报告写的不规范</td>   
+                    </tr>
+                    <tr class="imgca">
+                        <td class="tac">王小二</td>
+                        <td class="tac">优</td>
+                        <td class="tac" limit="15">浙江大学医学院附属妇产科医院</td>
+                        <td class="tac">2017-11-11 12:20</td>
+                        <td class="tac">出报告时间太慢</td>
+                        <td class="tac" limit="35">报告写的不规范，报告写的不规范，报告写的不规范，报告写的不规范</td>
+                    </tr>
+                    <tr >
+                        <td class="tac">王小二</td>
+                        <td class="tac">优</td>
+                        <td class="tac" limit="15">浙江大学医学院附属妇产科医院</td>
+                        <td class="tac">2017-11-11 12:20</td>
+                        <td class="tac">出报告时间太慢</td>
+                        <td class="tac" limit="35">报告写的不规范，报告写的不规范，报告写的不规范，报告写的不规范</td>
+                    </tr>
+                    <tr class="imgca">
+                        <td class="tac">王小二</td>
+                        <td class="tac">优</td>
+                        <td class="tac" limit="15">浙江大学医学院附属妇产科医院</td>
+                        <td class="tac">2017-11-11 12:20</td>
+                        <td class="tac">出报告时间太慢</td>
+                        <td class="tac" limit="35">报告写的不规范，报告写的不规范，报告写的不规范，报告写的不规范</td>
+                    </tr>
+                    <tr >
+                        <td class="tac">王小二</td>
+                        <td class="tac">优</td>
+                        <td class="tac" limit="15">浙江大学医学院附属妇产科医院</td>
+                        <td class="tac">2017-11-11 12:20</td>
+                        <td class="tac">出报告时间太慢</td>
+                        <td class="tac" limit="35">报告写的不规范，报告写的不规范，报告写的不规范，报告写的不规范</td>
+                    </tr>
+                    <tr class="imgca">
+                        <td class="tac">王小二</td>
+                        <td class="tac">优</td>
+                        <td class="tac" limit="15">浙江大学医学院附属妇产科医院</td>
+                        <td class="tac">2017-11-11 12:20</td>
+                        <td class="tac">出报告时间太慢</td>
+                        <td class="tac" limit="35">报告写的不规范，报告写的不规范，报告写的不规范，报告写的不规范</td>
+                    </tr>
+                    <tr >
+                        <td class="tac">王小二</td>
+                        <td class="tac">优</td>
+                        <td class="tac" limit="15">浙江大学医学院附属妇产科医院</td>
+                        <td class="tac">2017-11-11 12:20</td>
+                        <td class="tac">出报告时间太慢</td>
+                        <td class="tac" limit="35">报告写的不规范，报告写的不规范，报告写的不规范，报告写的不规范</td>
+                    </tr>
+                    
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        
+        <div class="region-con-page width96">
+            <div class="region-con-pagecon  imgc-con-pagecon">
+            	<span class="region-conp-span1 imgc-conp-span1"><a href="#"><<</a></span>
+            	<span class="region-conp-span2 imgc-conp-span2"><a href="#"><</a></span>
+            	<span class="current"><a href="#">1</a></span>
+            	<span><a href="#">2</a></span>
+            	<span><a href="#">3</a></span>
+            	<span><a href="#">4</a></span>
+            	<a href="#">...</a>
+            	<span><a href="#">6</a></span>
+            	<span class="region-conp-span3 imgc-conp-span3"><a href="#">></a></span>
+            	<span class="region-conp-span4 imgc-conp-span4"><a href="#">>></a></span>
+            	<p class="region-conp-p">
+            		跳转到：
+            		<input style="margin-left: 2px;" type="text" name="" id="" value="" />
+            		页
+            		<input class="region-cp-b imgc-cp-b"  type="bottom" value="确定" />
+            	</p>
+            </div>
+        </div>
+        
+        
+    </div>  
+</div>
+
+
+<script src="../../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../../js/scrollbar/jquery.mCustomScrollbar.min.js"></script>
+<script src="../../js/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+<script src="../../js/jquery.select.js" type="text/javascript"></script>
+<script src="../../js/layer/layer.js" type="text/javascript"></script>
+<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+<script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+<script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+<script type="text/javascript">
+jQuery.fn.limit=function(){  
+    var self = $("[limit]");  
+    self.each(function(){  
+        var objString = $(this).text();  
+        var objLength = $(this).text().length;  
+        var num = $(this).attr("limit");  
+        if(objLength > num){  
+            $(this).attr("title",objString);  
+            objString = $(this).text(objString.substring(0,num) + " ...");  
+        }  
+    })  
+}  
+</script>
+<script>
+    //消息闪动
+    function shake(ele, cls, times) {
+        var i = 0, t = false, o = ele.attr("class") + " ", c = "", times = times || 2;
+        if (t) return;
+
+        t = setInterval(function () {
+            i++;
+            c = i % 2 ? o + cls : o;
+            ele.attr("class", c);
+
+            if (i == 2 * times) {
+                clearInterval(t);
+                ele.removeClass(cls);
+            }
+        }, 200);
+    };
+    $(function () {
+
+        $(window).resize(function(){
+            init();
+        });
+
+        shake($(".message"), "alert", 8);
+
+        $(".consultation-result-head span").click(function () {
+            var i = $(this).attr("class");
+            var len = $("#consultation-result-table tbody tr").length;
+//            var trs = [];
+            trs = [];
+            if (i == "result-head-con") {
+                for (var i = 0; i < len; i++) {
+                    if ($("#consultation-result-table tbody tr").eq(i).find("td").eq("11").text() == "待诊断") {
+                        trs.push($("#consultation-result-table tbody tr").eq(i).find("td").eq("11").parent());
+                        $("#consultation-result-table tbody tr").eq(i).find("td").eq("11").parent().siblings().hide();
+                    }
+                }
+                for (var i = 0; i < trs.length; i++) {
+                    trs[i].show();
+                }
+            } else if (i == "result-head-examine") {
+
+            } else {
+                for (var i = 0; i < len; i++) {
+                    if ($("#consultation-result-table tbody tr").eq(i).find("td").eq("11").text() == "已完成") {
+                        trs.push($("#consultation-result-table tbody tr").eq(i).find("td").eq("11").parent());
+                        $("#consultation-result-table tbody tr").eq(i).find("td").eq("11").parent().siblings().hide();
+                    }
+                }
+                for (var i = 0; i < trs.length; i++) {
+                    trs[i].show();
+                }
+            }
+        });
+        function init() {
+
+            var clickY, topOffset;
+            var dragging = false;
+            var doc = document;
+            var coor = $("#coor");
+
+            var maxHeight = $(window).height();
+            var headH = $(".header").height();
+            var h4H = $("h4").height();
+            var queryH = $(".query-content").height();
+            var tableH = $(".pacs-table-head").height();
+            var pageH = 70;
+            //高度计算
+            var h = maxHeight-headH-h4H-queryH-tableH-pageH-20;
+            var boxH = h >1000 ? 1000 : h;
+            $(".pacs-con-top").height(boxH);
+            $(".pacs-con-top").mCustomScrollbar();
+            $("#mCSB_1_container").css("margin-right","0");
+            $("#mCSB_2_container").css("margin-right","0");
+
+           
+
+        };
+
+
+       $(window).load(function () {
+        	
+        	$('.result-table tr').click(function(){
+        		//console.log(11);
+    			$('.result-table tr').removeClass('current');
+    			$(this).addClass('current');
+    		})
+            init();
+            $(".bghj-content").mCustomScrollbar();
+            $(".part-bghj-right").mCustomScrollbar();
+            $(".pacs-bottom-btn6").click(function () {
+                var maxHeight = $(window).height();//662
+                var headH = $(".header").height();//80
+                var h4H = $("h4").height();//82
+                var queryH = 165;
+                var tableH = 50;
+                var pageH = 70;
+                $(".pacs-con-top").show();
+                //高度计算
+                $(".pacs-con-page").height(70);
+                $("#pacs-con-top").height(maxHeight-headH-h4H-queryH-tableH-pageH-20);
+        
+            });
+        });
+        
+        
+        
+        
+    })
+</script>
+<script>
+    $(function () {
+        $.divselect(".user-select", ".user-select-ul", ".user-select-span");
+        $(".imgca-conr-con").mCustomScrollbar();
+        $('.imgca-bo-ul li').mouseover(function(){
+        	$('.imgca-bo-ul li').removeClass('current');
+        	$(this).addClass('current');
+        	var indexVal=$(this).index();
+        	if(indexVal=='0'){
+        		$('.imgca-bo-con').show();
+        		$('.imgca-bo-chart').hide();
+        	}
+        	else if(indexVal=='1'){
+        		$('.imgca-bo-con').hide();
+        		$('.imgca-bo-chart').show();
+        	}
+        })
+        
+        $('.imgc-con-pagecon span').click(function(){  
+        	for(var i=0; i<$('.imgc-con-pagecon span').length;i++){
+        			if($('.imgc-con-pagecon span').eq(i).attr("class")=='current'){
+        				var index=i;
+        			}
+        		}
+        	console.log(index);
+        	$('.imgc-con-pagecon span').removeClass('current');
+ 	if($(this).attr("class")=='region-conp-span1'||$(this).attr("class")=='region-conp-span2'||$(this).attr("class")=='region-conp-span3'||$(this).attr("class")=='region-conp-span4'){
+        		console.log(index);
+        		console.log(11);
+        		$('.imgc-con-pagecon span').eq(index).addClass('current');
+        		
+        	}
+        	else{
+        		$(this).addClass('current');
+        	}
+       
+        })
+        
+        $(function(){  
+    		$("[limit]").limit();  
+		}) 
+    });
+    
+    
+</script>
+<script>
+	$(function () {
+    $('#container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            headerFormat: '{series.name}<br>',
+            pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: '扣分明细',
+            data: [
+                ['伪影',   32.0],
+                ['图像标识',       6.0],
+                {
+                    name: '描写简单',
+                    y: 10.0,
+                    sliced: true,
+                    selected: true
+                },
+                ['摄影体位',    6.0],
+                ['主要征象描述不全',     6.0],
+                ['主要征象描述错误',   6.0],
+                ['图像重要标识',    6.0],
+                ['用语不规范',     6.0],
+                ['主要阴性征象未描述',   6.0],
+                ['伪影',     6.0],
+                ['图像重要标识',   10.0],
+            ]
+        }]
+    });
+});
+</script>
+</body>
+</html>

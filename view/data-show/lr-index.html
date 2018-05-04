@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+	<head>
+		<meta charset="UTF-8">
+		<title>医院影像量统计</title>
+		<link href="../../css/lr-index.css" rel="stylesheet" type="text/css"/>	
+		<link rel="stylesheet" type="text/css" href="../../js/dataStatistics/css/dataStatistics.css"/>
+	</head>
+	<body class="lr-index">
+		<div class="lr-index-head">
+			<div class="lr-ihead-lefti">
+				<div class="lr-il-line"></div>
+				<!-- <div class="lr-il-data">2017年07月20号</div> -->
+			</div>
+			<div class="lr-ihead-middle">
+				医院影像量统计
+			</div>
+			<div class="lr-ihead-righti">
+				<div class="lr-ir-line"></div>
+<!-- 				<div class="lr-ir-data">上午09点30分</div> -->
+			</div>
+		</div>
+
+		<div class="lr-index-con clearfix">
+
+				<div class="lr-incr-left lr-long" style=" width:18%; overflow:hidden;">
+					<a href="dc-complete.html">
+								<h1>联网医院统计</h1>
+								<div class="lr-incr-bar">
+									<div id="container4"></div>
+								</div>
+					</a>
+				</div>
+				
+
+		<!-- =================== -->
+		<div style="width:80%; float:right;" class="sdd">
+			<div class="lr-incon-rate">
+
+				<div class="lr-incr-middle">
+					<div class="lr-inmid-left">
+						<h1>医院分布</h1>
+						<div class="lr-inleft-map">
+							<div class="lr-imap-photo">
+								<div class="lr-map-area1">
+									<a href="data-workload-doctor.html">
+										<span>
+											<i></i>遵义
+										</span>
+										<span>11家</span>
+									</a>
+								</div>
+								<div class="lr-map-area1 lr-map-area2">
+									<a href="data-workload-doctor.html">
+										<span>
+											<i></i>铜仁
+										</span>
+										<span>4家</span>
+									</a>
+								</div>
+								<div class="lr-map-area1 lr-map-area3">
+									<a href="data-workload-doctor.html">
+										<span>
+											<i></i>黔东南
+										</span>
+										<span>7家</span>
+									</a>
+								</div>
+								<div class="lr-map-area1 lr-map-area4">
+									<a href="data-workload-doctor.html">
+										<span>
+											<i></i>黔南
+										</span>
+										<span>7家</span>
+									</a>
+								</div>
+								<div class="lr-map-area1 lr-map-area5">
+									<a href="data-workload-doctor.html">
+										<span>
+											<i></i>黔西南
+										</span>
+										<span>3家</span>
+									</a>
+								</div>
+								<div class="lr-map-area1 lr-map-area6">
+									<a href="data-workload-doctor.html">
+										<span>
+											<i></i>六盘水
+										</span>
+										<span>7家</span>
+									</a>
+								</div>
+								<div class="lr-map-area1 lr-map-area7">
+									<a href="data-workload-doctor.html">
+										<span>
+											<i></i>毕节
+										</span>
+										<span>13家</span>
+									</a>
+								</div>
+								<div class="lr-map-area1 lr-map-area8">
+									<a href="data-workload-doctor.html">
+										<span>
+											<i></i>安顺
+										</span>
+										<span>0家</span>
+									</a>
+								</div>
+								<div class="lr-map-area1 lr-map-area9">
+									<a href="data-workload-doctor.html">
+										<span>
+											<i></i>贵阳
+										</span>
+										<span>28家</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="lr-inmid-right">
+						<h1>当天影像上传量</h1>
+						<div class="lr-inright-con">
+							<a href="data-workload-doctor.html">
+								<div class="lr-icon-head">
+									<h2 class="lr-icoh-h2">当天影像总数</h2>
+								</div>
+								<div class="dataStatistics dataStatistics1" style="margin-left: 40px;">
+									<div class="digit_set"></div>
+									<div class="digit_set"></div>
+									<div class="digit_set"></div>
+									<div class="digit_set set_last"></div>
+								</div>
+								<div class="lr-inright-video" style="margin-top: 13%;">
+									<span>CT</span>
+									<span class="lr-inright-videonum"><i>164</i> 例</span>
+								</div>
+								<div class="lr-inright-video">
+									<span>DR</span>
+									<span class="lr-inright-videonum1"><i>5</i> 例</span>
+								</div>
+								<div class="lr-inright-video">
+									<span>MR</span>
+									<span class="lr-inright-videonum2"><i>14</i> 例</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="lr-incr-right">
+					<a href="data-workload-doctor.html">
+						<h1>影像数量统计</h1>
+						<div id="container5"></div>
+					</a>
+				</div>
+			</div>
+			<div class="lr-incon-bottom">
+
+				<div class="lr-incb-middle">
+					<div class="lr-imid-left lr-imid-left1" style="margin-left: 2.3%;">
+						<a href="data-workload-doctor.html">
+							<h2>CT影像</h2>
+							<div class="lr-iml-list">
+								<span>黔南</span>
+								<span class="lr-ilist-num"><i>76</i>例</span>
+							</div>
+							<div class="lr-iml-list lr-iml-list1">
+								<span>毕节</span>
+								<span class="lr-ilist-num1"><i>72</i>例</span>
+							</div>
+							<div class="lr-iml-list lr-iml-list2">
+								<span>遵义</span>
+								<span class="lr-ilist-num2"><i>13</i>例</span>
+							</div>
+						</a>
+					</div>
+					
+					<div class="lr-imid-left lr-imid-left2" >
+						<a href="data-workload-doctor.html">
+							<h2>DX影像</h2>
+							<div class="lr-iml-list">
+								<span>毕节</span>
+								<span class="lr-ilist-num3"><i>142</i>例</span>
+							</div>
+							<div class="lr-iml-list lr-iml-list1">
+								<span>黔南</span>
+								<span class="lr-ilist-num4"><i>67</i>例</span>
+							</div>
+							<div class="lr-iml-list lr-iml-list2">
+								<span>安顺</span>
+								<span class="lr-ilist-num5"><i>11</i>例</span>
+							</div>
+						</a>
+					</div>
+					
+					<div class="lr-imid-left lr-imid-left3" >
+						<a href="data-workload-doctor.html">
+							<h2>MR影像</h2>
+							<div class="lr-iml-list">
+								<span>毕节</span>
+								<span class="lr-ilist-num6"><i>14</i>例</span>
+							</div>
+							<div class="lr-iml-list lr-iml-list1">
+								<span>贵阳市</span>
+								<span class="lr-ilist-num7"><i>0</i>例</span>
+							</div>
+							<div class="lr-iml-list lr-iml-list2">
+								<span>遵义</span>
+								<span class="lr-ilist-num8"><i>0</i>例</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+				<div class="lr-incb-right" style="overflow:hidden;">
+					<a href="data-workload-doctor.html">
+						<h1></h1>
+						<div id="container2" style="margin-top:-10px;"></div>
+					</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<script src="../../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="../../js/highchart/highcharts.js" type="text/javascript"></script>
+		<script src="../../js/highchart/rounded-corners.js" type="text/javascript"></script>
+		<script src="../../js/dataStatistics/jquery.dataStatistics.js"></script>
+	<script>
+	$(function(){
+		$(window).resize(function(){
+            init();
+        });
+    
+    	function init() { //高度自适应
+            var maxwidth = $(window).width();
+            var maxheight = $(window).height();
+            var headH = $(".lr-ihead-middle").width();
+            var lefti = $(".lr-ihead-lefti").width();
+            var righti = $(".lr-ihead-righti").width();
+            var val = 60;
+            var linewidth=(maxwidth-headH-lefti-righti-60)/2;
+            var rateheight=maxheight*0.5;
+            var bottomhei=maxheight-150-rateheight;
+            // var marginVal=maxheight*0.024;
+            // var chartVal=rateheight*0.344;
+            $('.lr-il-line').css('width',linewidth+'px');
+          	$('.lr-ir-line').css('width',linewidth+'px');
+          	$('.lr-incon-rate').css('height',rateheight+'px');
+          	// $('.lr-long').css('height',rateheight+bottomhei+20);
+          	// $('.lr-incon-rate').css('marginBottom',marginVal+'px');
+			$('.lr-incon-bottom').css('height',bottomhei+'px');
+          	$('.lr-long').height($('.sdd').height()-2);
+        };
+        $(window).load(function () {
+            init();
+        });
+       })
+        
+	</script>
+	<script> 
+		
+		$(window).load(function(){
+			// window.setInterval(function() {	
+   // 			var i=1;
+   // 			var posVal=$('.lr-ilist-num i').text();
+   // 			var curVal=parseInt(posVal)+1;
+   // 			if(curVal==100){
+   // 				curVal=0;
+   // 			}
+   // 			$('.lr-ilist-num i').html(curVal);
+  	// 		}, 5000);
+  			
+  	// 		window.setInterval(function() {	
+   // 			var i=1;
+   // 			var posVal=$('.lr-ilist-num1 i').text();
+   // 			var curVal=parseInt(posVal)+1;
+   // 			if(curVal==100){
+   // 				curVal=0;
+   // 			}
+   // 			$('.lr-ilist-num1 i').html(curVal);
+  	// 		}, 5000);
+  			
+  	// 		window.setInterval(function() {	
+   // 			var i=1;
+   // 			var posVal=$('.lr-ilist-num2 i').text();
+   // 			var curVal=parseInt(posVal)+1;
+   // 			if(curVal==100){
+   // 				curVal=0;
+   // 			}
+   // 			$('.lr-ilist-num2 i').html(curVal);
+  	// 		}, 5000);
+  			
+  	// 		window.setInterval(function() {	
+   // 			var i=1;
+   // 			var posVal=$('.lr-ilist-num3 i').text();
+   // 			var curVal=parseInt(posVal)+1;
+   // 			if(curVal==100){
+   // 				curVal=0;
+   // 			}
+   // 			$('.lr-ilist-num3 i').html(curVal);
+  	// 		}, 5000);
+  			
+  	// 		window.setInterval(function() {	
+   // 			var i=1;
+   // 			var posVal=$('.lr-ilist-num4 i').text();
+   // 			var curVal=parseInt(posVal)+1;
+   // 			if(curVal==100){
+   // 				curVal=0;
+   // 			}
+   // 			$('.lr-ilist-num4 i').html(curVal);
+  	// 		}, 5000);
+  			
+  	// 		window.setInterval(function() {	
+   // 			var i=1;
+   // 			var posVal=$('.lr-ilist-num5 i').text();
+   // 			var curVal=parseInt(posVal)+1;
+   // 			if(curVal==100){
+   // 				curVal=0;
+   // 			}
+   // 			$('.lr-ilist-num5 i').html(curVal);
+  	// 		}, 5000);
+  			
+  	// 		window.setInterval(function() {	
+   // 			var i=1;
+   // 			var posVal=$('.lr-ilist-num6 i').text();
+   // 			var curVal=parseInt(posVal)+1;
+   // 			if(curVal==100){
+   // 				curVal=0;
+   // 			}
+   // 			$('.lr-ilist-num6 i').html(curVal);
+  	// 		}, 5000);
+  			
+  	// 		window.setInterval(function() {	
+   // 			var i=1;
+   // 			var posVal=$('.lr-ilist-num7 i').text();
+   // 			var curVal=parseInt(posVal)+1;
+   // 			if(curVal==100){
+   // 				curVal=0;
+   // 			}
+   // 			$('.lr-ilist-num7 i').html(curVal);
+  	// 		}, 5000);
+  			
+  	// 		window.setInterval(function() {	
+   // 			var i=1;
+   // 			var posVal=$('.lr-ilist-num8 i').text();
+   // 			var curVal=parseInt(posVal)+1;
+   // 			if(curVal==100){
+   // 				curVal=0;
+   // 			}
+   // 			$('.lr-ilist-num8 i').html(curVal);
+  	// 		}, 5000);
+  			
+  	// 		window.setInterval(function() {	
+   // 			var i=1;
+   // 			var posVal=$('.lr-inright-videonum i').text();
+   // 			var curVal=parseInt(posVal)+1;
+   // 			if(curVal==1000){
+   // 				curVal=0;
+   // 			}
+   // 			$('.lr-inright-videonum i').html(curVal);
+  	// 		}, 5000);
+  			
+  	// 		window.setInterval(function() {	
+   // 			var i=1;
+   // 			var posVal=$('.lr-inright-videonum1 i').text();
+   // 			var curVal=parseInt(posVal)+1;
+   // 			if(curVal==1000){
+   // 				curVal=0;
+   // 			}
+   // 			$('.lr-inright-videonum1 i').html(curVal);
+  	// 		}, 5000);
+  			
+  	// 		window.setInterval(function() {	
+   // 			var i=1;
+   // 			var posVal=$('.lr-inright-videonum2 i').text();
+   // 			var curVal=parseInt(posVal)+1;
+   // 			if(curVal==1000){
+   // 				curVal=0;
+   // 			}
+   // 			$('.lr-inright-videonum2 i').html(curVal);
+  	// 		}, 5000);
+  			
+  			$('.dataStatistics1').dataStatistics({min:651,max:651,time:800000,len:4}); //三甲医院诊断总量次数
+		})
+		 
+	</script>
+	<script>
+		
+        
+       
+        $(function () {
+        	var valH=$(window).height()*0.5*0.45;
+
+		    $("#container").highcharts({
+		    	chart: {
+						backgroundColor: 'rgba(0,0,0,0)',
+						zoomType: 'x',
+						type: 'areaspline',
+						height:valH
+				},
+		        title: {
+		            text: ''
+		        },
+		        lineColor:'rgba(63,205,253,.8)',
+		        credits: {  
+		          	enabled:false  
+				}, 
+				exporting: {  
+		            enabled:false  
+				}, 
+				legend: {                                                                    
+           			enabled: false                                                           
+       			}, 
+		        plotOptions: {
+		            areaspline: {
+		                fillOpacity: 0.5
+		            }
+		        },
+		        xAxis: {
+		            tickInterval: 3600 * 1000,
+			        type: 'datetime',
+			            dateTimeLabelFormats: {
+			                 hour:"%k",
+			        },
+		            labels:{
+		            	format: '{value: %k}',
+		            	rotation: 0,
+                		style:{
+                    		color:'#fff'
+               				 }
+           			 },
+
+           			 gridLineWidth: 0
+		        },
+		        yAxis: {
+					title:false,
+		            labels:{
+                		style:{ 
+                    		color:'#fff'
+               				 }
+           			 },
+		            minorTickInterval: 0.1,
+		            gridLineWidth: 0
+		            
+		        },
+		        tooltip: {
+		            headerFormat: '{point.x:%k}时',
+		            pointFormat: '{point.y} 例'
+		        },
+		        series: [{
+		            data: [60, 20, 40, 80, 50, 32, 64, 40, 56],
+		            pointStart: 0,
+		            pointInterval: 3600 * 1000 // one hour
+		        }],
+		        
+		    });
+		});
+		
+        
+$(function () {
+		 var val=$(window).height()-150-20;
+		 var valH=$(window).height()*0.43;
+
+		var color1 = ['#3da6cc'],color2=['#3975e5'];
+
+	    Highcharts.getOptions().colors = Highcharts.map(color1, function (color) {
+	        return {
+	            //svg线性渐变属性，x2 y2控制横竖方向 斜向渐变radialGradient: { cx: 0.5, cy: 0.3, r: 0.7 }
+	            linearGradient: { x1: 0, y1: 0, x2: 0, y2: 1 },
+	            stops: [[0, Highcharts.Color(color2).setOpacity(1).get('rgba')],
+	                    [1, Highcharts.Color(color1).setOpacity(1).get('rgba')]
+	                   ]//可设几组值控制渐变色 0~1 = 0~100%
+	        };
+	    });
+
+//联网医院统计
+    $('#container4').highcharts({
+        chart: {
+            type: 'bar',
+            backgroundColor: 'rgba(0,0,0,0)',
+            height:val
+        },
+        title: { 
+            text : ''
+        },
+        xAxis: {
+            categories: ['贵州省', '贵阳市', '遵义', '毕节', '铜仁','黔东南','黔南','黔西南','六盘水','安顺'],
+            title: {
+                text: null
+            },
+            tickColor:'transparent',
+            lineColor:'transparent',
+            labels:{
+                	style:{
+                    		color:'#fff'
+               			}
+           	}
+        },
+        yAxis: {
+            min: 0,
+            max:null,
+            visible:false
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true,
+                    allowOverlap:false,
+                    inside:false,
+                    format:'{y}',
+                    color:'#fff'
+                },
+                borderWidth: 0,
+                pointWidth:8
+                
+            }
+        },
+        tooltip:false,
+        legend:false,
+        credits: {
+            enabled: false
+        },
+        series: [{
+        	borderRadiusTopLeft:8,
+        	borderRadiusTopRight:8,
+        	borderRadiusBottomLeft:8,
+        	borderRadiusBottomRight:8,
+            data: [80,28,11,13,4,7,7,3,7,null],
+            dataLabels: {
+		       align:"right",
+		       verticalAlign:"bottom",
+		       style:{fontWeight: "normal", textOutline:"0" }
+           	
+		    }
+        }]
+        // $('.highcharts-credits,.highcharts-contextbutton').hide();
+    })
+    $('#container5').highcharts({
+        chart: {
+            type: 'bar',
+            backgroundColor: 'rgba(0,0,0,0)',
+            height:valH
+        },
+        title: { 
+            text : ''
+        },
+        xAxis: {
+            categories: ['贵州省', '贵阳市', '遵义', '毕节', '铜仁','黔东南','黔南','黔西南','六盘水','安顺'],
+            title: {
+                text: null
+            },
+            tickColor:'transparent',
+            lineColor:'transparent',
+            labels:{
+                	style:{
+                    		color:'#fff'
+               			}
+           	}
+        },
+        yAxis: {
+            min: 0,
+            max:null,
+            visible:false
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true,
+                    allowOverlap:false,
+                    inside:false,
+                    format:'{y}',
+                    color:'#fff'
+                },
+                borderWidth: 0,
+                pointWidth:8
+                
+            }
+        },
+        tooltip:false,
+        legend:false,
+        credits: {
+            enabled: false
+        },
+        series: [{
+        	borderRadiusTopLeft:8,
+        	borderRadiusTopRight:8,
+        	borderRadiusBottomLeft:8,
+        	borderRadiusBottomRight:8,
+            data: [258895,18421,26640,104979,10645,6620,41871,49718,null,null],
+            dataLabels: {
+		       align:"right",
+		       verticalAlign:"bottom",
+		       style:{fontWeight: "normal", textOutline:"0" }
+           	
+		    }
+        }]
+        // $('.highcharts-credits,.highcharts-contextbutton').hide();
+    })
+
+});
+
+
+
+
+
+	</script>
+	
+	<script>
+
+	//左上表格
+	$(function () {
+			var pieheight= $(window).height()*0.5*0.6-60;
+	    $('#container1').highcharts({
+	        chart: {
+	            plotBackgroundColor: null,
+	            plotBorderWidth: null,
+	            plotShadow: false,
+	            height:pieheight,
+	            backgroundColor: 'rgba(0,0,0,0)',
+	            style:{"overflow":"visible"}
+	        },
+	        credits: {  
+				enabled:false  
+			}, 
+			exporting: {  
+				enabled:false  
+			}, 
+	        title: {
+	            text: ''
+	        },
+
+	        tooltip: {
+	            headerFormat: '{series.name}<br>',
+	            pointFormat: '{point.name}:{point.y}个'
+	        },
+	        plotOptions: {
+	            pie: {
+	            	size:'100%',
+	            	innerSize:'50%',
+	                allowPointSelect: true,
+	                cursor: 'pointer',
+	                dataLabels: {
+	                    enabled: false
+	                },
+	                showInLegend: true,
+	                borderWidth: 0
+	            },
+	            
+	        },
+	        legend: {
+	        		align:'right',
+	　　			enabled: true,
+					floating: true,
+					itemStyle:{ "color": "#fff","font-weight":"normal"},
+					itemHoverStyle:{ "color": "#b6e2fb"},
+					layout: 'vertical',
+					verticalAlign:'middle',
+					x:50,
+					itemMarginBottom:5,
+					labelFormat:'{name} {y}个'
+			},
+	        series: [{
+	            type: 'pie',
+	            name: '远程会诊剩余状况',
+	            data: [ 
+	                {
+	                    name: '检验剩余',
+	                    y: 2,
+	                    color:'#ffa82c'
+	                },
+	                {
+	                    name: '影像剩余',
+	                    y: 5,
+	                    color:'#1677c8'
+	                },
+	                {
+	                    name: '心电剩余',
+	                    y: 8,
+	                    color:'#fe574f'
+	                }
+	                
+	            ]
+	        }]
+	    });
+	});
+		
+		// 左下表格
+		$(function () {	
+			var columnheight= $(window).height()*0.5*0.95-150-10;
+				
+		    $('#container2').highcharts({
+		        chart: {
+		        		backgroundColor: 'rgba(0,0,0,0)',
+		            	type: 'column',
+		            	height:columnheight
+		        },
+		        title: {
+		            text: ''
+		        },
+		        credits: {  
+				    enabled:false  
+				}, 
+				exporting: {  
+				    enabled:false  
+				}, 
+				legend: {                                                                    
+		           	enabled: false                                                           
+		       	}, 
+		        subtitle: {
+		            text: ''
+		        },
+		        xAxis: {
+		            type: 'category',
+		            labels: {
+		                rotation: -45,
+		                style: {
+		                    fontSize: '13px',
+		                    fontFamily: 'Verdana, sans-serif'
+		                }
+		            },
+		            tickColor:'transparent',
+		            labels:{
+                		style:{ 
+                    		color:'#fff'
+               				 }
+           			 }
+		        },
+		        plotOptions: {
+		             column:{  
+           				pointPadding: 0.2,
+							borderWidth: 0
+        			}  
+		        },
+		        yAxis: {
+		            min: 0,
+		            title: {
+		                text: ''
+		            },
+		            labels:{
+                		style:{ 
+                    		color:'#fff'
+               				 }
+           			 }
+		            
+		        },
+		        legend: {
+		            enabled: false
+		        },
+		        tooltip: {
+		            pointFormat: '影像数量:{y}'
+		        },
+		        series: [{
+		            name: '影像类型总表',
+		            data: [
+		            		{
+			                name: 'CT',
+			                y: 55396,
+			                color:'#1677c8'
+		            		},
+		            		{
+			                name: 'DR',
+			                y: 3836,
+			                color:'#fe574f'
+		            		},
+		            		{
+			                name: 'MR',
+			                y: 6009,
+			                color:'#ffa82c'
+		            		},
+		            		{
+			                name: 'OT',
+			                y: 193331,
+			                color:'#2db9d4'
+		            		},
+		            ],
+		            dataLabels: {
+		                enabled: true,
+		                format: '{y}',
+		                color:'#fff'
+		            }
+		        }]
+		    });
+		});
+
+		//右下表格
+		
+	// 	$(function () {
+	// 		var pieheight= $(window).height()*0.5-140-60;
+	// 	    $('#container3').highcharts({
+	// 	        chart: {
+	// 	            plotBackgroundColor: null,
+	// 	            plotBorderWidth: null,
+	// 	            plotShadow: false,
+	// 	            backgroundColor: 'rgba(0,0,0,0)',
+	// 	            height:pieheight,
+	// 	            style:{"overflow":"visible"}
+	// 	        },
+	// 	        credits: {  
+	// 				enabled:false  
+	// 			}, 
+	// 			exporting: {  
+	// 				enabled:false  
+	// 			}, 
+	// 	        title: {
+	// 	            text: ''
+	// 	        },
+	// 	        tooltip: {
+	// 	            headerFormat: '{series.name}<br>',
+	// 	            pointFormat: '{point.name}:{point.y}个'
+	// 	        },
+	// 	        plotOptions: {
+	// 	            pie: {
+	// 	                allowPointSelect: true,
+	// 	                cursor: 'pointer',
+	// 	                dataLabels: {
+	// 	                    enabled: false
+	// 	                },
+	// 	                minSize:130,
+	// 	                showInLegend: true,
+	// 	                borderWidth: 0
+	// 	            }
+	// 	        },
+	// 	        legend: {
+	// 	        		align:'right',
+	// 	　　			enabled: true,
+	// 					floating: true,
+	// 					itemStyle:{ "color": "#fff","font-weight":"normal"},
+	// 					itemHoverStyle:{ "color": "#b6e2fb"},
+	// 					layout: 'vertical',
+	// 					verticalAlign:'bottom',
+	// 					x:50,
+	// 					itemMarginBottom:5,
+	// 					labelFormat:'{name} {y}个'
+	// 			},
+	// 	        series: [{
+	// 	            type: 'pie',
+	// 	            name: '远程会诊超时状况',
+	// 	            data: [ 
+	// 	                {
+	// 	                    name: '检验超时',
+	// 	                    y: 5,
+	// 	                    color:'#ffa82c'
+	// 	                },
+	// 	                {
+	// 	                    name: '影像超时',
+	// 	                    y:10,
+	// 	                    color:'#1677c8'
+	// 	                },
+	// 	                {
+	// 	                    name: '心电超时',
+	// 	                    y: 3,
+	// 	                    color:'#fe574f'
+	// 	                }
+		                
+	// 	            ]
+	// 	        }]
+	// 	});
+	// });
+
+	</script>
+	</body>
+</html>

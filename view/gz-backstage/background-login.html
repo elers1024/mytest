@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>后台管理系统登录</title>
+    <link href="../../css/layout.css?v=upd201600405" rel="stylesheet" type="text/css"/>
+    <link href="../../css/style.css?v=upd20160427" rel="stylesheet" type="text/css"/>
+    <link href="../../css/imagemanage.css?v=upd20161010" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="../../images/favicon.ico">
+    <!-- respond.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+    <script src="../../js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+        (function () {
+            if (!
+                        /*@cc-on!@*/
+                            0) return;
+            var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+            var i = e.length;
+            while (i--) {
+                document.createElement(e[i])
+            }
+        })()
+    </script>
+
+</head>
+<body>
+<header class="relogin-header">
+	<h1>影像综合管理平台&nbsp;-&nbsp;后台管理系统</h1>
+	<span><a href="#">返回首页</a></span>
+</header>
+<div class="relogin-con">
+	<div class="relogin-bglines backlogin-bglines"></div>
+	<div class="relogin-con-log">
+		<div class="relogin-conl-left back-login-left">		
+		</div>
+		<div class="relogin-conl-right">
+			<h1 class="relogin-conlr-h1  backlog-conlr-h1">
+				<i></i>后台管理系统登录
+			</h1>
+			 <div class="user-select pacs-select" style="margin-top: 18px;    width: 278px; float: left; margin-left:40px;">
+                        <div class="grey-select" style="height: 38px; width: 278px; float: left; ">
+                            <span class="user-select-span select-1-span" style="color: #c6c6c6; font-weight: normal; height: 38px; line-height: 38px;">请选择登录医院</span>
+                            <i style="top: 17px;"></i>
+                        </div>
+                        <ul class="user-select-ul select-1-ul" style="width: 100%;z-index: 100; left: 1px; top: 39px;">
+                            <li><a title="病历号" href="javascript:;">浙二医院</a></li>
+                            <li><a title="病历号" href="javascript:;">浙二医院</a></li>
+                            <li><a title="病历号" href="javascript:;">浙一医院</a></li>
+                            <li><a title="病历号" href="javascript:;">浙二医院</a></li>
+                            <li><a title="病历号" href="javascript:;">浙二医院</a></li>
+                            <li><a title="病历号" href="javascript:;">浙一医院</a></li>
+                        </ul>
+                    </div>
+                    
+                   <input  class="relogin-conlr-acc" type="text" name="" id="" placeholder="请输入账号名"/>
+                   <input class="relogin-conlr-h1-pass" type="text" name="" id=""  placeholder="请输入密码"/>
+				   <span class="relogin-conlr-for"><a href="#">忘记密码？</a></span>	
+				   <input class="relogin-conlr-login back-conlr-login" type="button" name="" id="" value="登录" />
+		</div>
+	</div>
+</div>
+<div class="relogin-bottom">
+	<div class="relogin-bot-con">
+		<p class="relogin-botc-tel">客服电话：400-0571-574&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系地址：杭州市上城区中河中路198号路都大厦4F、5F</p>
+		<p class="relogin-botc-add">版权所有：杭州联众医疗科技股份有限公司Copyright @ Hangzhou Lianzhong Medical Technology Co., Ltd. </p>
+	</div>
+	
+</div>
+	    
+  
+
+<script src="../../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../../js/jquery.select.js" type="text/javascript"></script>
+
+
+<script>
+	$(function () {
+        $.divselect(".user-select", ".user-select-ul", ".user-select-span");
+    });
+</script>
+
+</body>
+</html>

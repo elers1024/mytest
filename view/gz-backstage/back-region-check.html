@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>后台管理</title>
+    <link href="../../css/layout.css?v=upd201600405" rel="stylesheet" type="text/css"/>
+    <link href="../../css/style.css?v=upd20160427" rel="stylesheet" type="text/css"/>
+    <link href="../../js/layer/skin/layer.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/imagemanage.css?v=upd20161010" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="../../images/favicon.ico">
+    <link href="../../js/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css"/>
+    <!-- respond.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+    <script src="../../js/respond.js" type="text/javascript"></script>
+    <![endif]-->
+    <script>
+        (function () {
+            if (!
+                        /*@cc-on!@*/
+                            0) return;
+            var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+            var i = e.length;
+            while (i--) {
+                document.createElement(e[i])
+            }
+        })()
+    </script>
+
+</head>
+<body class="pacs-image-con-body" >
+<div class="header backheader">
+    <div class="header-content">
+        <div class="head-left fl clearfixed backhead-left">
+            <a href="#" class=""><img src="../../images/log.png" alt=""/></a>
+            <span></span>
+        </div>
+	        
+        <div class="head-right fl clearfixed">
+            <div class="user-head">
+                <img src="../../images/user.jpg" alt=""/>
+            </div>
+            <div class="user-info backuser-info">
+                <p>
+                    欢迎您，<span>用户名</span>
+                    <a href="#" class="message"><i></i> <em>99+</em></a>
+                </p>
+
+                <p>
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">设置</a>
+                    <a href="javascript:;">帮助</a>
+                    <a href="javascript:;">退出</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="pacs-warp">
+    <h4>
+        <span class="width96"><a href="#">后台管理</a> ><a href='#'>区域预约管理</a> ><a href='#'>检查部位管理</a></span>
+    </h4>
+    <!--左侧-->
+    <div class="width96">
+    	<div class="back-left">
+    		<ul class="back-left-ul">
+    			<li class="back-left-li0 back-left-ulli">
+    				<a href="back-linkhospital.html">连接医院管理</a>
+    			</li>
+    			<li>
+    				<i></i><a class="back-left-ula" href="#">医院和用户管理</a>
+    				<div class="back-left-list" style="display: none;">
+    					<ul class="back-left-listul">
+    						<li>
+    							<a href="back-user-usermanage.html">用户/角色管理</a>
+    						</li>
+    						<li>
+    							<a href="back-user-areamain.html">行政地区维护</a>
+    						</li>
+    					</ul>
+    				</div>
+    			</li>
+    			<li class="current">
+    				<i></i><a class="back-left-ula" href="#">区域预约管理</a>
+    				<div class="back-left-list">
+    					<ul class="back-left-listul">
+    						<li >
+    							<a href="back-region-hoslist.html">医院列表管理</a>
+    						</li>
+    						<li>
+    							<a href="back-region-equiplist.html">设备列表管理</a>
+    						</li>
+    						<li>
+    							<a href="back-region-appointment.html">预约时间管理</a>
+    						</li>
+    						<li class="current">
+    							<a href="back-region-check">检查部位管理</a>
+    						</li>
+    					</ul>
+    				</div>
+    			</li>
+    			<li>
+                    <i></i><a class="back-left-ula" href="#">集中诊断管理</a>
+                    <div class="back-left-list"  style="display: none;">
+                        <ul class="back-left-listul">
+                            <li>
+                                <a href="back-diagnosis-hospital.html">医院列表管理</a>
+                            </li>
+                            <li>
+                                <a href="back-diagnosis-apply.html">申请用户管理</a>
+                            </li>
+                            <li>
+                                <a href="back-diagnosis-user.html">诊断用户管理</a>
+                            </li>
+                            <li>
+                                <a href="back-dianosis-center.html">诊断中心管理</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+    			<li>
+    				<i></i><a class="back-left-ula" href="#">影像质控管理</a>
+    				<div class="back-left-list" style="display: none;">
+    					<ul class="back-left-listul" >
+    						<li>
+                                <a href="back-video-project.html">评分项目管理</a>
+                            </li>
+                            <li>
+                                <a href="back-video-rank.html">评分等级管理</a>
+                            </li>	
+    					</ul>
+    				</div>
+    			</li>
+                <li  class="back-left-li5 back-left-ulli ">
+                    <a href="back-data-manage.html">数据管理</a>
+                </li>
+                <li  class="back-left-li6 back-left-ulli ">
+                    <a href="back-log-manage.html">日志管理</a>
+                </li>
+                <li  class="back-left-li7 back-left-ulli">
+                    <a href="back-msg-manage.html">短信管理</a>
+                </li>
+    		</ul>
+    	</div>
+    	
+    	<div class="back-right">
+    		<div class="backr-selecthos">
+    			<div class="backr-selecthos-head">
+    				<span class="backr-selecth-left">
+    					<i></i>选择医院
+    				</span>
+    				<div class="backr-selecth-right">
+    					<span style="display: none;">杭州市第一人民医院</span>
+    					<i></i>
+    				</div>
+    			</div>
+    			<div class="backr-selecthos-con" >
+    				<ul class="backr-selecthos-conlist clearfix">
+    					<li>
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li style="margin-right: 0px;">
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li style="margin-right: 0px;">
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />市一医院
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li style="margin-right: 0px;">
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />市一医院
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li style="margin-right: 0px;">
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />市一医院
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li style="margin-right: 0px;">
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />市一医院
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    					<li style="margin-right: 0px;">
+    						<input type="radio" name="1" id="" value="" />杭州市第一人民医院
+    					</li>
+    				</ul>
+    				
+    			</div>
+    		</div>
+    		
+    		<div class="backr-selectequip "  style="display: none;">
+    			<div class="backr-selectequip-head">
+    				<span class="backr-selectequip-left">
+    					<i></i>选择设备
+    				</span>
+    				<div class="backr-selectequip-right">
+    					<span style="display: none;">CT</span>
+    					<i></i>
+    				</div>
+    			</div>
+    			<div class="backr-selectequip-con" >
+    				<ul class="  backr-selectequip-conlist  clearfix">
+    					<li>
+    						<input type="radio" name="1" id="" value="" />CT
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />RF
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />RF
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />RF
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />RF
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />RF
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />MR
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />MR
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />MR
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />MR
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />RF
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />RF
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />RF
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />MR
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />MR
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />MR
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />MR
+    					</li>
+    					<li>
+    						<input type="radio" name="1" id="" value="" />RF
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+    	
+    		<div class="backr-bodypart" style="display: none;"  >
+    			<div class="backr-bp-select">
+    				<div class="backr-bp-selectdiv backr-bp-selectdiv2 ">
+    					<a href="#">
+               				<i class=" "></i>
+               				<span>删除</span>
+               			</a>
+    				</div>
+    				<div class="backr-bp-selectdiv backr-bp-selectdiv1 "  id="selectrevise">
+    					<a href="#">
+               				<i class=" "></i>
+               				<span>修改</span>
+               			</a>
+    				</div>
+    				<div class="backr-bp-selectdiv" id="selectadd">
+    					<a href="#">
+               				<i class=" "></i>
+               				<span>新建</span>
+               			</a>
+    				</div>
+    			</div>
+    		
+    			<div class="backr-bp-con">
+    				<div class="backr-bp-conleft">
+    					<ul>
+    						<li>头部</li>
+    						<li>胸部</li>
+    						<li>四肢</li>
+    						<li class="current">肺部</li>
+    						<li>胃部</li>
+    						<li>肠道</li>
+    						<li>脚踝</li>
+    					</ul>
+    				</div>
+    				<section class="backr-bp-conright" id='section0' style="display: none;">
+    					<ul class="clearfix">
+    						<li>0001-头颅平扫</li>
+    						<li>0002-头颅增强</li>
+    						<li>0003-眼眶平扫</li>
+    						<li>0004-头颅平扫</li>
+    						<li>0005-头颅增强</li>
+    						<li>0006-眼眶平扫</li>
+    						<li>0007-头颅平扫</li>
+    						<li>0008-头颅增强</li>
+    						<li>0009-头颅平扫</li>
+    						<li>0010-头颅增强</li>
+    						<li>0011-眼眶平扫</li>
+    						<li>0012-头颅平扫</li>
+    						<li>0013-头颅增强</li>
+    						<li>0014-眼眶平扫</li>
+    						<li>0015-头颅平扫</li>
+    						<li>0016-头颅增强</li>
+    						<li>0017-头颅平扫</li>
+    						<li>0018-头颅增强</li>
+    						<li>0019-眼眶平扫</li>
+    						<li>0020-头颅平扫</li>
+    						<li>0021-头颅增强</li>
+    						<li>0022-眼眶平扫</li>
+    						<li>0023-头颅平扫</li>
+    						<li>0024-头颅增强</li>
+    						<li>0025-头颅平扫</li>
+    						<li>0026-头颅增强</li>
+    						<li>0027-眼眶平扫</li>
+    						<li>0028-头颅平扫</li>
+    						<li>0029-头颅平扫</li>
+    						<li>0030-头颅增强</li>
+    					</ul>
+    				</section>
+    				
+    				<section class="backr-bp-conright" id='section1' style="display: none;">
+    					<ul class="clearfix">
+    						<li>1001-头颅平扫</li>
+    						<li>1002-头颅增强</li>
+    						<li>1003-眼眶平扫</li>
+    						<li>1004-头颅平扫</li>
+    						<li>1005-头颅增强</li>
+    						<li>1006-眼眶平扫</li>
+    						<li>1007-头颅平扫</li>
+    						<li>1008-头颅增强</li>
+    						<li>1009-头颅平扫</li>
+    						<li>1010-头颅增强</li>
+    						<li>1011-眼眶平扫</li>
+    						<li>1012-头颅平扫</li>
+    						<li>1013-头颅增强</li>
+    						<li>1014-眼眶平扫</li>
+    						<li>1015-头颅平扫</li>
+    						<li>1016-头颅增强</li>
+    						<li>1017-头颅平扫</li>
+    						<li>1018-头颅增强</li>
+    						<li>1019-眼眶平扫</li>
+    						<li>1020-头颅平扫</li>
+    						<li>1021-头颅增强</li>
+    						<li>1022-眼眶平扫</li>
+    						<li>1023-头颅平扫</li>
+    						<li>1024-头颅增强</li>
+    						<li>1025-头颅平扫</li>
+    						<li>1026-头颅增强</li>
+    						<li>1027-眼眶平扫</li>
+    						<li>1028-头颅平扫</li>
+    						<li>1029-头颅平扫</li>
+    						<li>1030-头颅增强</li>
+    					</ul>
+    				</section>
+    				
+    				<section class="backr-bp-conright" id='section2' style="display: none;">
+    					<ul class="clearfix">
+    						<li>2001-头颅平扫</li>
+    						<li>2002-头颅增强</li>
+    						<li>2003-眼眶平扫</li>
+    						<li>2004-头颅平扫</li>
+    						<li>2005-头颅增强</li>
+    						<li>2006-眼眶平扫</li>
+    						<li>2007-头颅平扫</li>
+    						<li>2008-头颅增强</li>
+    						<li>2009-头颅平扫</li>
+    						<li>2010-头颅增强</li>
+    						<li>2011-眼眶平扫</li>
+    						<li>2012-头颅平扫</li>
+    						<li>2013-头颅增强</li>
+    						<li>2014-眼眶平扫</li>
+    						<li>2015-头颅平扫</li>
+    					</ul>
+    				</section>
+    				
+    				<section class="backr-bp-conright" id='section3' >
+    					<ul class="clearfix">
+    						<li>3001-头颅平扫</li>
+    						<li>3002-头颅增强</li>
+    						<li>3003-眼眶平扫</li>
+    						<li>3004-头颅平扫</li>
+    						<li>3005-头颅增强</li>
+    						<li>3006-眼眶平扫</li>
+    						<li>3007-头颅平扫</li>
+    						<li>3008-头颅增强</li>
+    						<li>3009-头颅平扫</li>
+    						<li>3010-头颅增强</li>
+    						<li>3011-眼眶平扫</li>
+    						<li>3012-头颅平扫</li>
+    						<li>3013-头颅增强</li>
+    						<li>3014-眼眶平扫</li>
+    						<li>3015-头颅平扫</li>
+    					</ul>
+    				</section>
+    				
+    				<section class="backr-bp-conright" id='section4' style="display: none;">
+    					<ul class="clearfix">
+    						<li>4001-头颅平扫</li>
+    						<li>4002-头颅增强</li>
+    						<li>4003-眼眶平扫</li>
+    						<li>4004-头颅平扫</li>
+    						<li>4005-头颅增强</li>
+    						<li>4006-眼眶平扫</li>
+    						<li>4007-头颅平扫</li>
+    						<li>4008-头颅增强</li>
+    						<li>4009-头颅平扫</li>
+    						<li>4010-头颅增强</li>
+    						<li>4011-眼眶平扫</li>
+    						<li>4014-眼眶平扫</li>
+    						<li>4015-头颅平扫</li>
+    					</ul>
+    				</section>
+    				
+    				<section class="backr-bp-conright" id='section5' style="display: none;">
+    					<ul class="clearfix">
+    						<li>5001-头颅平扫</li>
+    						<li>5002-头颅增强</li>
+    						<li>5003-眼眶平扫</li>
+    						<li>5004-头颅平扫</li>
+    						<li>5005-头颅增强</li>
+    						<li>5006-眼眶平扫</li>
+    						<li>5007-头颅平扫</li>
+    						<li>5008-头颅增强</li>
+    						<li>5009-头颅平扫</li>
+    						<li>5010-头颅增强</li>
+    						<li>5011-眼眶平扫</li>
+    						<li>5012-头颅平扫</li>
+    						<li>5013-头颅增强</li>
+    						<li>5014-眼眶平扫</li>
+    						<li>5015-头颅平扫</li>
+    						<li>5016-头颅增强</li>
+    						<li>5017-头颅平扫</li>
+    						<li>5018-头颅增强</li>
+    						<li>5019-眼眶平扫</li>
+    						<li>5020-头颅平扫</li>
+    						<li>5021-头颅增强</li>
+    						<li>5022-眼眶平扫</li>
+    						<li>5023-头颅平扫</li>
+    						<li>5024-头颅增强</li>
+    					</ul>
+    				</section>
+    				
+    				<section class="backr-bp-conright" id='section6' style="display: none;">
+    					<ul class="clearfix">
+    						<li>6001-头颅平扫</li>
+    						<li>6002-头颅增强</li>
+    						<li>6003-眼眶平扫</li>
+    						<li>6004-头颅平扫</li>
+    						<li>6005-头颅增强</li>
+    						<li>6006-眼眶平扫</li>
+    						<li>6007-头颅平扫</li>
+    						<li>6008-头颅增强</li>
+    						<li>6009-头颅平扫</li>
+    						<li>6010-头颅增强</li>
+    						<li>6011-眼眶平扫</li>
+    						<li>6012-头颅平扫</li>
+    						<li>6013-头颅增强</li>
+    						<li>6014-眼眶平扫</li>
+    					</ul>
+    				</section>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+     
+</div>
+
+
+<div class="back-add-layer" id="addlayer" style="display: none;">
+	<h1>新增部位</h1>
+	<div class="back-add-con">
+		<div class="back-add-conlist">
+			<p>检查类型</p>
+			<input type="text" />
+		</div>
+		<div class="back-add-conlist">
+			<p>选择部位</p>
+			<input type="text" />
+		</div>
+		<div class="back-add-conlist">
+			<p>检查项目编号</p>
+			<input type="text" />
+		</div>
+		<div class="back-add-conlist">
+			<p>检查项目名称</p>
+			<input type="text" />
+		</div>
+		<div class="back-add-conlist">
+			<p>检查费用</p>
+			<input type="text" />
+		</div>
+		<div class="back-add-conlist">
+			<p>备注</p>
+			<textarea name="" rows="" cols=""></textarea>
+		</div>
+	</div>
+	<input class="back-add-button" type="button" name="" id="" value="提交" />
+</div>
+
+
+<div class="back-add-layer" id="reviselayer" style="display: none;">
+	<h1>修改部位</h1>
+	<div class="back-add-con">
+		<div class="back-add-conlist">
+			<p>检查类型</p>
+			<input type="text" />
+		</div>
+		<div class="back-add-conlist">
+			<p>选择部位</p>
+			<input type="text" />
+		</div>
+		<div class="back-add-conlist">
+			<p>检查项目编号</p>
+			<input type="text" />
+		</div>
+		<div class="back-add-conlist">
+			<p>检查项目名称</p>
+			<input type="text" />
+		</div>
+		<div class="back-add-conlist">
+			<p>检查费用</p>
+			<input type="text" />
+		</div>
+		<div class="back-add-conlist">
+			<p>备注</p>
+			<textarea name="" rows="" cols=""></textarea>
+		</div>
+	</div>
+	<input class="back-add-button" type="button" name="" id="" value="提交" />
+</div>
+
+
+<script src="../../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../../js/scrollbar/jquery.mCustomScrollbar.min.js"></script>
+<script src="../../js/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+<script src="../../js/jquery.select.js" type="text/javascript"></script>
+<script src="../../js/layer/layer.js" type="text/javascript"></script>
+
+<script>
+    //消息闪动
+    function shake(ele, cls, times) {
+        var i = 0, t = false, o = ele.attr("class") + " ", c = "", times = times || 2;
+        if (t) return;
+
+        t = setInterval(function () {
+            i++;
+            c = i % 2 ? o + cls : o;
+            ele.attr("class", c);
+
+            if (i == 2 * times) {
+                clearInterval(t);
+                ele.removeClass(cls);
+            }
+        }, 200);
+    };
+    $(function () {
+
+        $(window).resize(function(){
+            init();
+        });
+
+  
+        function init() {
+            var maxHeight = $(window).height();
+            var headH = $(".header").height();
+            var h4H = $("h4").height();
+            //高度计算 
+			var leftH=maxHeight- headH - h4H -15-1;
+			$(".back-left").height(leftH);
+        };
+
+
+       $(window).load(function () {
+            init();   
+       }); 
+    })
+</script>
+<script>
+    $(function () {
+        $.divselect(".user-select", ".user-select-ul", ".user-select-span");
+        $('.back-left-ul li .back-left-ula').click(function(){//左侧导航切换	
+        	if($(this).parent().find('.back-left-list').is(":hidden")){ 
+        		$('.back-left-ul li .back-left-list').hide();
+        		$(this).parent().find('.back-left-list').show();
+        		
+        		$(this).parent().addClass('current');
+        	}
+        	else{
+        		$(this).parent().find('.back-left-list').hide();
+        		$(this).parent().removeClass('current');
+        	}
+        })
+        
+        $('.back-left-ulli').click(function(){//左侧导航切换
+        	$('.back-left-ul li .back-left-ula').parent().removeClass('current');
+        	$('.back-left-ul li .back-left-list').hide();
+        	$('.back-left-listul li').removeClass('current');
+        	$('.back-left-ulli').removeClass('currentli');
+        	$(this).addClass('currentli');
+        	
+        })
+        
+        $('.backr-selecthos-head').click(function(){//选择医院
+        	if($('.backr-selecthos-con').is(':hidden')){
+        		$('.backr-selecthos-con').slideDown();
+        		$('.backr-selecthos-head').find('i').css('background-position','-164px -417px');
+        	}
+        	else{
+        		$('.backr-selecthos-con').slideUp();
+        		$('.backr-selecthos-head').find('i').css('background-position','-128px -418px');
+        	}
+        })
+        
+        $('.backr-selectequip-head').click(function(){//选择设备
+        	if($('.backr-selectequip-con').is(':hidden')){
+        		$('.backr-selectequip-con').slideDown();
+        		$('.backr-selectequip-head').find('i').css('background-position','-164px -417px');
+        	}
+        	else{
+        		$('.backr-selectequip-con').slideUp();
+        		$('.backr-selectequip-head').find('i').css('background-position','-128px -418px');
+        	}
+        })
+        
+        
+        $('.backr-selecthos-conlist li').click(function(){//提交流程
+            $(this).find('input').attr("checked",true);
+        	$('.backr-selecthos-con').slideUp();
+        	$('.backr-selectequip').slideDown();
+             $('.backr-selecth-right span').text($(this).text()).show(); 
+        })
+            $('.backr-selectequip-conlist li').click(function(){
+                $(this).find('input').attr("checked",true);
+                $('.backr-selectequip-con').slideUp();
+                $('.backr-bodypart').slideDown();
+                $('.backr-selectequip-right span').text($(this).text()).show(); 
+            })
+        $('.backr-bp-selectdiv').click(function(){//新建删除的选中
+        	$('.backr-bp-selectdiv').removeClass('current');
+        	$('.backr-bp-selectdiv').removeClass('current1');
+        	$('.backr-bp-selectdiv').removeClass('current2');
+        	var indexVal=$(this).index();
+        	if(indexVal==2){
+        		$('.backr-bp-selectdiv').addClass('current');
+        		$('.backr-bp-selectdiv1').removeClass('current');
+        		$('.backr-bp-selectdiv2').removeClass('current');
+        	}
+        	else if(indexVal==1){
+        		$('.backr-bp-selectdiv1').addClass('current1');
+        	}
+        	else{
+        		$('.backr-bp-selectdiv2').addClass('current2');
+        	}
+        })
+        
+        $('.backr-bp-conleft li').click(function(){//右侧身体部位的转换
+        	$('.backr-bp-conleft li').removeClass('current');
+        	$(this).addClass('current');
+        	var indexVal=$(this).index();
+        	$('section').hide();
+        	if(indexVal==0){
+        		$('#section0').show();
+        	}
+        	else if(indexVal==1){
+        		$('#section1').show();
+        	}
+        	else if(indexVal==2){
+        		$('#section2').show();
+        	}
+        	else if(indexVal==3){
+        		$('#section3').show();
+        	}
+        	else if(indexVal==4){
+        		$('#section4').show();
+        	}
+        	else if(indexVal==5){
+        		$('#section5').show();
+        	}
+        	else if(indexVal==6){
+        		$('#section6').show();
+        	}
+        })
+        
+        $('#selectadd').click(function(){//新增弹层
+	        layer.open({
+	        type: 1,
+	        title: false,
+	        area:['500px', '460px'],
+	        content: $('#addlayer')
+	   		 });
+   		 })
+        
+        
+        $('#selectrevise').click(function(){//修改弹层
+	        layer.open({
+	        type: 1,
+	        title: false,
+	        area:['500px', '460px'],
+	        content: $('#reviselayer')
+	   		 });
+   		 })
+    });
+    
+    
+</script>
+</body>
+</html>
